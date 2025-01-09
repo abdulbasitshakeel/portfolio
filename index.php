@@ -48,7 +48,7 @@
         </li>
       </ul>
     </div>
-    <a href="#contact" class="btn btn-primary">*</a>
+    <a href="#contact" class="btn btn-light">Button</a>
   </div>
 </nav>
 

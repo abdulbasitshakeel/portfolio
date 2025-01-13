@@ -46,7 +46,7 @@
         </li>
       </ul>
     </div>
-    <a href="#contact" class="btn btn-light">Button</a>
+    <a href="#contact" class="btn btn-light">Hire Me</a>
   </div>
 </nav>
 
@@ -77,87 +77,81 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="box-shadow-full">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="row">  
-                  <div class="col-sm-6 col-md-7">
-                    <div class="about-info">
-                      <p><span class="title-s">Name: </span> <span>Abdul Basait Shakeel</span></p>
-                      <p><span class="title-s">Profile: </span> <span>Web Developer</span></p>
-                      <p><span class="title-s">Email: </span> <span>basitshakeel2005@gmail.com</span></p>
-                      <p><span class="title-s">Phone: </span> <span>(+92) 331-8035039</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-mf">
-                  <p class="title-s">Skill</p>
-                  <span>HTML5</span> <span class="pull-right">95%</span>
-                  <div class="progress">
-                    <div class="progress-bar rounded" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>CSS3</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar rounded" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>Javascript</span> <span class="pull-right">75%</span>
-                  <div class="progress">
-                    <div class="progress-bar rounded" role="progressbar" style="width: 75%" aria-valuenow="675" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>Bootstrap</span> <span class="pull-right">90%</span>
-                  <div class="progress">
-                    <div class="progress-bar rounded" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>JQuery</span> <span class="pull-right">50%</span>
-                  <div class="progress">
-                    <div class="progress-bar rounded" role="progressbar" style="width: 50%" aria-valuenow="675" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>MySQL</span> <span class="pull-right">80%</span>
-                  <div class="progress">
-                    <div class="progress-bar rounded" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>PHP</span> <span class="pull-right">70%</span>
-                  <div class="progress">
-                    <div class="progress-bar rounded" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>Full Website Creation</span> <span class="pull-right">100%</span>
-                  <div class="progress">
-                    <div class="progress-bar rounded" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="about-me pt-4 pt-md-0">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      About Me
-                    </h5>
-                  </div>
-                  <p class="lead">
-                    I'm Basit Shakeel, a passionate Web Developer with a keen interest in building innovative and user-focused digital solutions. My journey in web development started with a drive to create impactful online experiences that leave a lasting impression.
-                  </p>
-                  <p class="lead">
-                    With a solid foundation in both frontend and backend technologies, I specialize in crafting seamless, responsive websites and web applications that prioritize user experience. I enjoy working in dynamic environments, where I can push the limits of my creativity and technical skills to deliver cutting-edge solutions.
-                  </p>
-                  <!-- <p class="lead">
-                    For me, web development is not just about writing code—it's about understanding the end user's needs and translating them into intuitive, functional designs. I take pride in my ability to communicate and collaborate effectively with clients and teams, ensuring that every project is delivered on time and exceeds expectations.
-                  </p> -->
-                  <p class="lead">
-                    Whether it's designing beautiful interfaces or building scalable web applications, my focus remains on creating solutions that are both efficient and easy to use. I am committed to staying on top of the latest industry trends and continuously improving my skills to stay ahead in the rapidly evolving field of web development.
-                  </p>
-                  <p class="lead">
-                    Let's work together to turn your ideas into a remarkable digital experience
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div class="row">
+    <div class="col-md-12">
+      <div class="about-me pt-4">
+        <div class="title-box-2">
+          <h5 class="title-left">
+            About Me
+          </h5>
+        </div>
+        <p class="lead">
+          I'm Basit Shakeel, a passionate Web Developer with a keen interest in building innovative and user-focused digital solutions. My journey in web development started with a drive to create impactful online experiences that leave a lasting impression.
+        </p>
+        <p class="lead">
+          With a solid foundation in both frontend and backend technologies, I specialize in crafting seamless, responsive websites and web applications that prioritize user experience. I enjoy working in dynamic environments, where I can push the limits of my creativity and technical skills to deliver cutting-edge solutions.
+        </p>
+        <p class="lead">
+          Whether it's designing beautiful interfaces or building scalable web applications, my focus remains on creating solutions that are both efficient and easy to use. I am committed to staying on top of the latest industry trends and continuously improving my skills to stay ahead in the rapidly evolving field of web development.
+        </p>
+        <p class="lead">
+          Let's work together to turn your ideas into a remarkable digital experience.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills and Information Section -->
+  <div class="row mt-5">
+    <!-- About Information -->
+    <div class="col-md-6">
+      <div class="about-info">
+        <p><span class="title-s">Name: </span> <span>Abdul Basait Shakeel</span></p>
+        <p><span class="title-s">Profile: </span> <span>Web Developer</span></p>
+        <p><span class="title-s">Email: </span> <span>basitshakeel2005@gmail.com</span></p>
+        <p><span class="title-s">Phone: </span> <span>(+92) 331-8035039</span></p>
+      </div>
+    </div>
+
+    <!-- Skills Progress -->
+    <div class="col-md-6">
+      <div class="skill-mf">
+        <p class="title-s">Skill</p>
+        <span>HTML5</span> <span class="pull-right">95%</span>
+        <div class="progress">
+          <div class="progress-bar rounded" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <span>CSS3</span> <span class="pull-right">85%</span>
+        <div class="progress">
+          <div class="progress-bar rounded" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <span>Javascript</span> <span class="pull-right">75%</span>
+        <div class="progress">
+          <div class="progress-bar rounded" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <span>Bootstrap</span> <span class="pull-right">90%</span>
+        <div class="progress">
+          <div class="progress-bar rounded" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <span>JQuery</span> <span class="pull-right">50%</span>
+        <div class="progress">
+          <div class="progress-bar rounded" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <span>MySQL</span> <span class="pull-right">80%</span>
+        <div class="progress">
+          <div class="progress-bar rounded" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <span>PHP</span> <span class="pull-right">70%</span>
+        <div class="progress">
+          <div class="progress-bar rounded" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <span>Full Website Creation</span> <span class="pull-right">100%</span>
+        <div class="progress">
+          <div class="progress-bar rounded" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
           </div>
         </div>
       </div>

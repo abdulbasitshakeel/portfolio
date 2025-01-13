@@ -6,19 +6,17 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
+  <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/img/boy.png" rel="icon">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/animate.min.css" rel="stylesheet">
   <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/css/font-awesome.css" rel="stylesheet">
-  <link href="assets/css/ionicons.css" rel="stylesheet">
-  <link href="assets/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">  
   <link href="assets/css/owl.theme.default.css" rel="stylesheet">
   <link href="assets/css/owl.theme.green.css" rel="stylesheet">
   <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/css/lightbox.min.css" rel="stylesheet">
   <link href="assets/css/style-sky-blue.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body id="page-top">
 <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top rounded-navbar" id="mainNav">
@@ -486,14 +484,13 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
   <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery-migrate.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/easing.min.js"></script>
   <script src="assets/js/jquery.waypoints.min.js"></script>
   <script src="assets/js/jquery.counterup.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/js/lightbox.min.js"></script>
+  <script src="assets/js/lightbox.min.js"></script>
   <script src="assets/js/typed.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/particles.js"></script>

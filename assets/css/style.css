@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 body {
-  background-color: #f5f5f5;
+  background-color: #1c1c1c!important;
   color: #4e4e4e;
 }
 
@@ -153,8 +153,6 @@ a:hover {
   background-color: #0078ff;
   margin: 0 auto;
 }
-
-/*--/ Title Left /--*/
 
 .title-box-2 {
   margin-bottom: 3rem;
@@ -351,8 +349,8 @@ a:hover {
 #preloader:before {
   content: "";
   position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
+  top: calc(70% - 30px);
+  left: calc(70% - 30px);
   border: 6px solid #f2f2f2;
   border-top: 6px solid #0078ff;
   border-radius: 50%;
@@ -385,7 +383,6 @@ a:hover {
     transform: rotate(360deg);
   }
 }
-
 /*======================================
 //--//-->   NAVBAR
 ======================================*/
@@ -393,8 +390,8 @@ a:hover {
 .navbar-b {
   transition: all .5s ease-in-out;
   background-color: transparent;
-  padding-top: 1.563rem;
-  padding-bottom: 1.563rem;
+  padding-top: 5px!important;
+  padding-bottom: 5px!important;
 }
 
 .navbar-b.navbar-reduce {
@@ -410,7 +407,7 @@ a:hover {
 
 .navbar-b.navbar-trans .nav-link,
 .navbar-b.navbar-reduce .nav-link {
-  color: #fff;
+  color: #6c757d;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -466,31 +463,31 @@ a:hover {
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
   background-color: #fff;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-bottom: 15px;
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+  color: #6c757d!important;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #0078ff;
+  background-color: #6c757d!important;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #0078ff;
+  color: #6c757d!important;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #0078ff;
+  color: #6c757d;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #0078ff;
+  color: #6c757d!important;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -522,13 +519,13 @@ a:hover {
 }
 
 .navbar-b .dropdown-menu .dropdown-item:hover {
-  background-color: #0078ff;
+  background-color: #6c757d;
   color: #fff;
   transition: all 500ms ease;
 }
 
 .navbar-b .dropdown-menu .dropdown-item.active {
-  background-color: #0078ff;
+  background-color: #6c757d;
 }
 
 /*--/ Hamburger Navbar /--*/

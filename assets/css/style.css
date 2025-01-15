@@ -3,18 +3,17 @@ body {
   background-color: #1c1c1c!important;
   color: #4e4e4e;
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #1e1e1e;
+  color: white !important;
 }
 
 a {
-  color: #1e1e1e;
+  color: rgb(108, 117, 125) ;
   transition: all 0.5s ease-in-out;
 }
 
@@ -150,7 +149,7 @@ a:hover {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #0078ff;
+  background-color: rgb(112 120 128);
   margin: 0 auto;
 }
 
@@ -167,7 +166,7 @@ a:hover {
   content: '';
   position: absolute;
   height: 3px;
-  background-color: #0078ff;
+  background-color: rgb(112 120 128)!important;
   width: 100px;
   bottom: -12px;
 }
@@ -308,9 +307,6 @@ a:hover {
   cursor: pointer;
   border-radius: 50%;
 }
-
-/* Back to top button */
-
 .back-to-top {
   position: fixed;
   display: none;
@@ -661,6 +657,8 @@ a:hover {
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  background-color: #211e1e;
+  color: white;
 }
 
 .about-mf .about-img {

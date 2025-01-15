@@ -49,7 +49,6 @@
     <a href="#" class="btn btn-light">Hire Me</a>
   </div>
 </nav>
-
   <div  class="intro route bg-image" >
     <div class="overlay-itro" id="particles-js"></div>
       <div class="intro-content display-table">

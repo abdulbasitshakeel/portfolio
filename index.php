@@ -22,8 +22,8 @@
 <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top rounded-navbar" id="mainNav">
   <div class="container d-flex justify-content-between align-items-center">
     <!-- Left Text -->
-    <span class="navbar-brand mb-0 h1" style="font-family: Pacifico;
-  font-weight: 400;font-size:38px;">BS</span>
+    <span class="navbar-brand mb-0 h1"><a href="index.php" style="font-family: Pacifico;
+  font-weight: 400;font-size:38px;color:white!important;">BS</a></span>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
       aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span></span>
@@ -46,7 +46,7 @@
         </li>
       </ul>
     </div>
-    <a href="#" class="btn btn-light">Hire Me</a>
+    <div><a class="btn btn-light" href="#">Hire</a></div>
   </div>
 </nav>
   <div  class="intro route bg-image" >
@@ -100,20 +100,12 @@
             </div>
           </div>
             <div class="row mt-5">
-              <div class="col-md-6">
-                <div class="about-info">
-                  <p><span class="title-s">Name: </span> <span>Abdul Basait Shakeel</span></p>
-                  <p><span class="title-s">Profile: </span> <span>Web Developer</span></p>
-                  <p><span class="title-s">Email: </span> <span>basitshakeel2005@gmail.com</span></p>
-                  <p><span class="title-s">Phone: </span> <span>(+92) 331-8035039</span></p>
-                </div>
-              </div>
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="skill-mf">
-                  <p class="title-s">Skill</p>
-                  <span>HTML5</span> <span class="pull-right">95%</span>
+                  <h5 class="title-left mb-5">Skills</h5>
+                  <span>HTML5</span> <span class="pull-right">100%</span>
                   <div class="progress">
-                    <div class="progress-bar rounded" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar rounded" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <span>CSS3</span> <span class="pull-right">85%</span>
                   <div class="progress">

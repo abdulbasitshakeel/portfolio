@@ -107,9 +107,9 @@
                   <div class="progress">
                     <div class="progress-bar rounded" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <span>CSS3</span> <span class="pull-right">85%</span>
+                  <span>CSS3</span> <span class="pull-right">95%</span>
                   <div class="progress">
-                    <div class="progress-bar rounded" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar rounded" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <span>Javascript</span> <span class="pull-right">75%</span>
                   <div class="progress">

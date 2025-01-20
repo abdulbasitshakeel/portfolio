@@ -10,20 +10,18 @@
   <link href="assets/img/boy.png" rel="icon">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/animate.min.css" rel="stylesheet">
-  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/css/font-awesome.min.css" rel="stylesheet">  
   <link href="assets/css/owl.theme.default.css" rel="stylesheet">
   <link href="assets/css/owl.theme.green.css" rel="stylesheet">
   <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/css/lightbox.min.css" rel="stylesheet">
   <link href="assets/css/style-sky-blue.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body id="page-top">
 <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top rounded-navbar" id="mainNav">
   <div class="container d-flex justify-content-between align-items-center">
-    <!-- Left Text -->
     <span class="navbar-brand mb-0 h1"><a href="index.php" style="font-family: Pacifico;
-  font-weight: 400;font-size:38px;color:white!important;">BS</a></span>
+  font-weight: 400;font-size:38px;color:white!important;margin-left:20px;">ABS</a></span>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
       aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span></span>
@@ -46,31 +44,40 @@
         </li>
       </ul>
     </div>
-    <div><a class="btn btn-light" href="#">Hire</a></div>
+    <div class="d-flex flex-row align-items-center">
+      <a class="btn btn-outline-light resume-btn ms-3" href="#">Resume</a>
+      <a class="btn btn-light hire-btn" href="#">Hire Me</a>
+    </div>
   </div>
 </nav>
-  <div  class="intro route bg-image" >
-    <div class="overlay-itro" id="particles-js"></div>
-      <div class="intro-content display-table">
-        <div class="table-cell">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 text-center">
-                <div class="about-img mb-3">
-                  <img src="assets/img/profile.png" class="img-fluid rounded-circle b-shadow-a" alt="Profile Image">
+<div class="sticky-icon">
+   <a href="https://www.instagram.com/?hl=en" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
+   <a href="https://www.facebook.com/" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
+   <a href="https://aboutme.google.com/u/0/?referer=gplus" class="Google"><i class="fab fa-google-plus-g"> </i> Google + </a>
+   <a href="https://www.youtube.com/" class="Youtube"><i class="fab fa-youtube"></i> Youtube </a>
+   <a href="https://twitter.com/login" class="Twitter"><i class="fab fa-twitter"> </i> Twitter </a>   
+</div>
+<div class="intro route bg-image" >
+  <div class="overlay-itro" id="particles-js"></div>
+  <div class="intro-content display-table">
+          <div class="table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <div class="about-img mb-3">
+                    <img src="assets/img/profile.png" class="img-fluid rounded-circle b-shadow-a" alt="Profile Image">
+                  </div>
+                  <h1 class="intro-title mb-3">Abdul Basit Shakeel</h1>
+                  <p class="intro-subtitle">
+                    <span class="text-slider-items">Web Developer, Web Designer, Frontend Developer</span>
+                    <strong class="text-slider"></strong>
+                  </p>
                 </div>
-                <h1 class="intro-title mb-3">Abdul Basit Shakeel</h1>
-                <p class="intro-subtitle">
-                  <span class="text-slider-items">Web Developer, Web Designer, Frontend Developer</span>
-                  <strong class="text-slider"></strong>
-                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </div>
-  </div>
   <section id="about" class="about-mf sect-pt4 route">
     <div class="container">
       <div class="row">
@@ -143,313 +150,6 @@
       </div>
     </div>
   </section>
-  <section id="service" class="services-mf route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Crafting Web Services
-            </h3>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-monitor"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Web Design</h2>
-              <p class="s-description text-center">
-                Creating responsive and interactive web interfaces that engage users. Focused on delivering seamless performance and optimizing the user experience.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-code-working"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Web Development</h2>
-              <p class="s-description text-center">
-                Building dynamic web applications that meet user needs. Focused on high-performance solutions while ensuring smooth user interactions and functionality.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">E-Commerce Website</h2>
-              <p class="s-description text-center">
-                I am specialized in E-commerce platform development, building scalable and secure online shopping solutions with a focus on user experience.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-stats-bars"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Maintenance & Support</h2>
-              <p class="s-description text-center">
-                I offer ongoing support and maintenance services to ensure your website smoothly. This includes bug fixes, security updates, and adding new features as needed.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-paintbrush"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Custom Work</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div> -->
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Responsive Designs</h2>
-              <p class="s-description text-center">
-                I ensure your website provides an excellent user experience across all devices, from desktops to mobile phones, by applying responsive design techniques.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">50</p>
-              <span class="counter-text">WORKS COMPLETED</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">1</p>
-              <span class="counter-text">YEARS OF EXPERIENCE</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-people"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">50</p>
-              <span class="counter-text">TOTAL CLIENTS</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">36</p>
-              <span class="counter-text">AWARD WON</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <section id="work" class="project-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Where Creativity Meets Code
-            </h3>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="assets/img/work-1.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="assets/img/work-1.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Creative Web Designs</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Designs</span> / <span class="w-date">8 Jan. 2025</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="assets/img/work-2.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Creative Web Designs</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Designs</span> / <span class="w-date">8 Jan. 2025</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="assets/img/work-3.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Creative Web Designs</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Designs</span> / <span class="w-date">8 Jan. 2025</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="assets/img/work-4.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Creative Web Designs</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Designs</span> / <span class="w-date">8 Jan. 2025</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="assets/img/work-5.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Creative Web Designs</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Designs</span> / <span class="w-date">8 Jan. 2025</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="assets/img/work-6.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Creative Web Designs</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Designs</span> / <span class="w-date">8 Jan. 2025</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   <footer>
     <div class="container">
       <div class="row">
@@ -461,7 +161,6 @@
       </div>
     </div>
   </footer>
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.min.js"></script>

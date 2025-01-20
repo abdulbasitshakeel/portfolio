@@ -10,12 +10,14 @@
   })
 
   // Preloader
-  $(window).on('load', function () {
-    if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function () {
-        $(this).remove();
-      });
-    }
+  document.addEventListener("DOMContentLoaded", function () {
+	const preloader = document.getElementById("preloader");
+  
+	// Simulate loading (fade out after 5 seconds)
+	setTimeout(() => {
+	  preloader.style.opacity = "0"; // Fade out
+	  preloader.style.visibility = "hidden"; // Hide preloader
+	}, 1000); // Adjust this time if needed
   });
 
   // Back to top button

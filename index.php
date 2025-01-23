@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Basit Shakeel</title>
+  <title>Abdul Basit Shakeel</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -18,65 +18,65 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body id="page-top">
-<nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top rounded-navbar" id="mainNav">
-  <div class="container d-flex justify-content-between align-items-center">
-    <span class="navbar-brand"><a href="index.php"><img src="assets/img/logo.png" alt="" ></a></span>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
-      aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link js-scroll active" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll" href="#services">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll" href="#work">Project</a>
-        </li>
-      </ul>
-      <div class="d-flex flex-row align-items-center ml-auto">
-        <a class="btn btn-outline-light resume-btn ms-3" href="#">Resume</a>
-        <a class="btn btn-light hire-btn" href="#">Hire Me</a>
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top rounded-navbar" id="mainNav">
+    <div class="container d-flex justify-content-between align-items-center">
+      <span class="navbar-brand"><a href="index.php"><img src="assets/img/logo.png" alt="" ></a></span>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#work">Project</a>
+          </li>
+        </ul>
+        <div class="d-flex flex-row align-items-center ml-auto">
+          <a class="btn btn-outline-light resume-btn ms-3" href="#">Resume</a>
+          <a class="btn btn-light hire-btn" href="#">Hire Me</a>
+        </div>
       </div>
     </div>
+  </nav>
+  <div class="sticky-icon">
+    <a href="https://www.linkedin.com/in/abdulbasitshakeel" class="linkedin"><i class="fab fa-linkedin"></i> linkedin </a>
+    <a href="https://www.instagram.com/" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
+    <a href="https://www.github.com/abdulbasitshakeel" class="Github"><i class="fab fa-github"> </i> GitHub </a>
+    <a href="https://www.facebook.com/" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
+    <a href="https://wa.me/923318035039" class="whatsapp"><i class="fab fa-whatsapp"> </i> Whatsapp </a>   
   </div>
-</nav>
-<div class="sticky-icon">
-  <a href="https://www.linkedin.com/in/abdulbasitshakeel" class="linkedin"><i class="fab fa-linkedin"></i> linkedin </a>
-   <a href="#" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
-   <a href="https://www.github.com/abdulbasitshakeel" class="Github"><i class="fab fa-github"> </i> GitHub </a>
-   <a href="#" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
-   <a href="#" class="whatsapp"><i class="fab fa-whatsapp"> </i> Whatsapp </a>   
-</div>
-<div class="intro route bg-image" id="home">
-  <div class="overlay-itro" id="particles-js"></div>
-  <div class="intro-content display-table">
-          <div class="table-cell">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 text-center">
-                  <div class="about-img mb-3">
-                    <img src="assets/img/profile.png" class="img-fluid rounded-circle b-shadow-a" alt="Profile Image">
-                  </div>
-                  <h1 class="intro-title mb-3">Abdul Basit Shakeel</h1>
-                  <p class="intro-subtitle">
-                    <span class="text-slider-items">Web Developer, Web Designer, Frontend Developer</span>
-                    <strong class="text-slider"></strong>
-                  </p>
+  <div class="intro route bg-image" id="home">
+    <div class="overlay-itro" id="particles-js"></div>
+      <div class="intro-content display-table">
+        <div class="table-cell">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="about-img mb-3">
+                  <img src="assets/img/profile.png" class="img-fluid rounded-circle b-shadow-a" alt="Profile Image">
                 </div>
+                <h1 class="intro-title mb-3">Abdul Basit Shakeel</h1>
+                <p class="intro-subtitle">
+                  <span class="text-slider-items">Web Developer, Web Designer, Frontend Developer</span>
+                  <strong class="text-slider"></strong>
+                </p>
               </div>
             </div>
           </div>
         </div>
-    </div>
+      </div>
+  </div>
   <section id="about" class="about-mf sect-pt4 route position-sticky">
     <div class="container">
       <div class="row">
@@ -160,91 +160,90 @@
     </div>
   </section>
   <section id="services" class="about-mf route position-sticky">
-  <div class="container">
-    <div class="box-shadow-full">
-      <h5 class="title-left mb-4 pt-3">Services</h5>
-      <div class="row">
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100 text-center shadow-sm">
-            <div class="icon mt-4">
-              <i class="fa-solid fa-pen-nib"></i>
+    <div class="container">
+      <div class="box-shadow-full">
+        <h5 class="title-left mb-4 pt-3">Services</h5>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center shadow-sm">
+              <div class="icon mt-4">
+                <i class="fa-solid fa-pen-nib"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Web Design</h4>
+                <p class="card-text">I am a skilled web designer committed to crafting unique, user-friendly websites. My designs focus on both aesthetics and functionality, ensuring your website not only looks great but also performs well.</p>
+              </div>
             </div>
-            <div class="card-body">
-              <h4 class="card-title">Web Design</h4>
-              <p class="card-text">I am a skilled web designer committed to crafting unique, user-friendly websites. My designs focus on both aesthetics and functionality, ensuring your website not only looks great but also performs well.</p>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center shadow-sm">
+              <div class="icon mt-4">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Web Development</h4>
+                <p class="card-text">I specialize in web development, creating scalable websites that meet your needs. My focus is on building high-performance sites using the latest technologies to ensure security and reliability.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center shadow-sm">
+              <div class="icon mt-4">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">E-Commerce Platform</h4>
+                <p class="card-text">I offer E-commerce services to help you build a powerful online store. From user-friendly design to secure payment systems, I ensure your E-commerce website is optimized for sales, performance, and growth.</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100 text-center shadow-sm">
-            <div class="icon mt-4">
-              <i class="fa-solid fa-code"></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Web Development</h4>
-              <p class="card-text">I specialize in web development, creating scalable websites that meet your needs. My focus is on building high-performance sites using the latest technologies to ensure security and reliability.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100 text-center shadow-sm">
-            <div class="icon mt-4">
-              <i class="fa-solid fa-bag-shopping"></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">E-Commerce Platform</h4>
-              <p class="card-text">I offer E-commerce services to help you build a powerful online store. From user-friendly design to secure payment systems, I ensure your E-commerce website is optimized for sales, performance, and growth.</p>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center shadow-sm">
+              <div class="icon mt-4">
+                <i class="fas fa-globe-europe "></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Marketing</h4>
+                <p class="card-text">I specialize in marketing, helping businesses grow through targeted strategies and effective campaigns that drive engagement and increase sales.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <footer class="pb-3 pt-3">
+    <div class="container">
       <div class="row">
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100 text-center shadow-sm">
-            <div class="icon mt-4">
-              <i class="fas fa-globe-europe "></i>
+        <div class="col-sm-12">
+          <div class="footer-work">
+            <img src="assets/img/logo.png" alt="" class="mb-4">
+            <div class="stickyy-icon">
+              <a href="https://www.linkedin.com/in/abdulbasitshakeel" class="f-linkedin"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/" class="f-Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.github.com/abdulbasitshakeel" class="f-Github"><i class="fab fa-github"> </i></a>
+              <a href="https://www.facebook.com/" class="f-Facebook"><i class="fab fa-facebook-f"> </i></a>
+              <a href="https://wa.me/923318035039" class="f-whatsapp"><i class="fab fa-whatsapp"> </i></a>   
             </div>
-            <div class="card-body">
-              <h4 class="card-title">Marketing</h4>
-              <p class="card-text">I specialize in marketing, helping businesses grow through targeted strategies and effective campaigns that drive engagement and increase sales.</p>
-            </div>
+            <p class="f-work pt-2">2025 All Rights by Reserved Abdul Basit Shakeel</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<footer class="pb-3 pt-3">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="footer-work">
-          <img src="assets/img/logo.png" alt="" class="mb-4">
-          <div class="stickyy-icon">
-            <a href="https://www.linkedin.com/in/abdulbasitshakeel" class="f-linkedin"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="f-Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.github.com/abdulbasitshakeel" class="f-Github"><i class="fab fa-github"> </i></a>
-            <a href="#" class="f-Facebook"><i class="fab fa-facebook-f"> </i></a>
-            <a href="#" class="f-whatsapp"><i class="fab fa-whatsapp"> </i></a>   
-          </div>
-          <p class="f-work pt-2">2025 All Rights by Reserved Abdul Basit Shakeel</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<div id="preloader"></div>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/easing.min.js"></script>
-<script src="assets/js/jquery.waypoints.min.js"></script>
-<script src="assets/js/jquery.counterup.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/lightbox.min.js"></script>
-<script src="assets/js/typed.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/particles.js"></script>
+  </footer>
+  <div id="preloader"></div>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/easing.min.js"></script>
+  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/lightbox.min.js"></script>
+  <script src="assets/js/typed.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/particles.js"></script>
 </body>
 </html>

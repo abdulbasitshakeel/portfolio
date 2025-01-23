@@ -30,7 +30,7 @@
     <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link js-scroll active" href="index.php">Home</a>
+          <a class="nav-link js-scroll active" href="#home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll" href="#about">About</a>
@@ -56,7 +56,7 @@
    <a href="https://www.youtube.com/" class="Youtube"><i class="fab fa-youtube"></i> Youtube </a>
    <a href="https://twitter.com/login" class="Twitter"><i class="fab fa-twitter"> </i> Twitter </a>   
 </div>
-<div class="intro route bg-image" >
+<div class="intro route bg-image" id="home">
   <div class="overlay-itro" id="particles-js"></div>
   <div class="intro-content display-table">
           <div class="table-cell">

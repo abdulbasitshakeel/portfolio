@@ -20,7 +20,7 @@
 <body id="page-top">
 <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top rounded-navbar" id="mainNav">
   <div class="container d-flex justify-content-between align-items-center">
-    <span class="navbar-brand mb-0 h1"><a href="index.php" style="font-family: Pacifico; font-weight: 400; font-size:38px; color:white!important; margin-left:10px;">ABS</a></span>
+    <span class="navbar-brand"><a href="index.php"><img src="assets/img/logo.png" alt="" ></a></span>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
       aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span></span>
@@ -50,11 +50,11 @@
   </div>
 </nav>
 <div class="sticky-icon">
-   <a href="https://www.instagram.com/?hl=en" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
-   <a href="https://www.facebook.com/" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
-   <a href="https://aboutme.google.com/u/0/?referer=gplus" class="Google"><i class="fab fa-google-plus-g"> </i> Google + </a>
-   <a href="https://www.youtube.com/" class="Youtube"><i class="fab fa-youtube"></i> Youtube </a>
-   <a href="https://twitter.com/login" class="Twitter"><i class="fab fa-twitter"> </i> Twitter </a>   
+  <a href="https://www.linkedin.com/in/abdulbasitshakeel" class="linkedin"><i class="fab fa-linkedin"></i> linkedin </a>
+   <a href="#" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
+   <a href="https://www.github.com/abdulbasitshakeel" class="Github"><i class="fab fa-github"> </i> GitHub </a>
+   <a href="#" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
+   <a href="#" class="whatsapp"><i class="fab fa-whatsapp"> </i> Whatsapp </a>   
 </div>
 <div class="intro route bg-image" id="home">
   <div class="overlay-itro" id="particles-js"></div>
@@ -164,63 +164,71 @@
     <div class="box-shadow-full">
       <h5 class="title-left mb-4 pt-3">Services</h5>
       <div class="row">
-        <div class="col-md-4">
-          <div class="card mt-5">
-            <div class="icon">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 text-center shadow-sm">
+            <div class="icon mt-4">
               <i class="fa-solid fa-pen-nib"></i>
             </div>
-            <h2>Web Design</h2>
-            <p>I am a skilled web designer committed to crafting unique, user friendly websites. My designs focus on both aesthetics and functionality, ensuring your website not only looks great but also performs well.</p>
+            <div class="card-body">
+              <h4 class="card-title">Web Design</h4>
+              <p class="card-text">I am a skilled web designer committed to crafting unique, user-friendly websites. My designs focus on both aesthetics and functionality, ensuring your website not only looks great but also performs well.</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card mt-5">
-            <div class="icon">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 text-center shadow-sm">
+            <div class="icon mt-4">
               <i class="fa-solid fa-code"></i>
             </div>
-            <h2>Web Development</h2>
-            <p>I specialize in web development, creating scalable websites that meet your needs. My focus is on building high-performance sites using the latest technologies to ensure security and reliability.</p>
+            <div class="card-body">
+              <h4 class="card-title">Web Development</h4>
+              <p class="card-text">I specialize in web development, creating scalable websites that meet your needs. My focus is on building high-performance sites using the latest technologies to ensure security and reliability.</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card mt-5">
-            <div class="icon">
-            <i class="fa-solid fa-bag-shopping"></i>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 text-center shadow-sm">
+            <div class="icon mt-4">
+              <i class="fa-solid fa-bag-shopping"></i>
             </div>
-            <h2>E-Commerce Platform</h2>
-            <p>I offer E-commerce services to help you build a powerful online store. From user friendly design to secure payment systems, I ensure your E-commerce website is optimized for sales, performance, and growth</p>
+            <div class="card-body">
+              <h4 class="card-title">E-Commerce Platform</h4>
+              <p class="card-text">I offer E-commerce services to help you build a powerful online store. From user-friendly design to secure payment systems, I ensure your E-commerce website is optimized for sales, performance, and growth.</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
-          <div class="card mt-5">
-            <div class="icon">
-              <i class="fab fa-apple" alt="Apple Icon"></i>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 text-center shadow-sm">
+            <div class="icon mt-4">
+              <i class="fas fa-globe-europe "></i>
             </div>
-            <h2>App Design</h2>
-            <p>I specialize in app development, creating high-performance apps with the latest technologies for security and seamless user experience</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mt-5">
-            <div class="icon">
-              <i class="fas fa-globe-europe" alt="Globe Icon"></i>
+            <div class="card-body">
+              <h4 class="card-title">Marketing</h4>
+              <p class="card-text">I specialize in marketing, helping businesses grow through targeted strategies and effective campaigns that drive engagement and increase sales.</p>
             </div>
-            <h2>Marketing</h2>
-            <p>I specialize in marketing, helping businesses grow through targeted strategies and effective campaigns that drive engagement and increase sales.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<footer  class="pb-3">
+
+<footer class="pb-3 pt-3">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <div class="copyright-box">
-          <p class="copyright">2025 All Rights by <a href="#page-top" class="text-decoration-none text-dark">Basit Shakeel </a> Reserved</p>
+        <div class="footer-work">
+          <img src="assets/img/logo.png" alt="" class="mb-4">
+          <div class="stickyy-icon">
+            <a href="https://www.linkedin.com/in/abdulbasitshakeel" class="f-linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="f-Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.github.com/abdulbasitshakeel" class="f-Github"><i class="fab fa-github"> </i></a>
+            <a href="#" class="f-Facebook"><i class="fab fa-facebook-f"> </i></a>
+            <a href="#" class="f-whatsapp"><i class="fab fa-whatsapp"> </i></a>   
+          </div>
+          <p class="f-work pt-2">2025 All Rights by Reserved Abdul Basit Shakeel</p>
         </div>
       </div>
     </div>

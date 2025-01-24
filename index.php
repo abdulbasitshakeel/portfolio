@@ -12,7 +12,7 @@
   <link href="assets/css/style-sky-blue.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body >
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top rounded-navbar" id="mainNav">
     <div class="container d-flex justify-content-between align-items-center">
       <span class="navbar-brand"><a href="index.php"><img src="assets/img/logo.png" alt="" ></a></span>
@@ -79,7 +79,7 @@
           <div class="box-shadow-full">
             <div class="row">
               <div class="col-md-12">
-                <div class="about-me pt-4">
+                <div class="about-me pt-4 fadein">
                   <div class="title-box-2">
                     <h5 class="title-left">
                       About Me
@@ -102,7 +102,7 @@
           </div>
             <div class="row mt-4">
               <div class="col-md-12">
-                <div class="skill-mf">
+                <div class="skill-mf fadein">
                   <h5 class="title-left mb-5">Skills</h5>
                   <div class="d-flex justify-content-between">
                     <span>HTML5</span> <span class="pull-right">100%</span>
@@ -156,7 +156,7 @@
   </section>
   <section id="services" class="about-mf route position-sticky">  
     <div class="container">
-      <div class="box-shadow-full">
+      <div class="box-shadow-full fadein">
         <h5 class="title-left pt-3" style="margin-bottom:32px;">Services</h5>
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4">
@@ -209,6 +209,7 @@
       </div>
     </div>
   </section>
+  <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
   <footer class="pb-3 pt-3">
     <div class="container">
       <div class="row">

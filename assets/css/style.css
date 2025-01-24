@@ -186,7 +186,7 @@ a:hover {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #000; 
+  background: #000!important; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,8 +200,8 @@ a:hover {
 }
 #preloader:before {
   content: "";
-  border: 6px solid #f2f2f2;
-  border-top: 6px solid #0078ff; /* Blue spinner */
+  border: 6px solid rgb(158, 158, 158)!important;
+  border-top: 6px solid white!important; 
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -548,6 +548,16 @@ span.navbar-brand img {
 /*======================================
 //--//-->   ABOUT
 ======================================*/
+.fadein {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translate(0, 100px);
+}
+
+.fadein.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -645,6 +655,30 @@ span.navbar-brand img {
   font-size: 16px;
   margin: 20px auto;
   padding: 0 20px;
+}
+
+/*btn back to work*/
+#back-to-top-btn { 
+  position: fixed;  
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px!important;
+  width: 50px!important;
+  height: 50px!important;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid #333;
+  border-radius: 50%;
+  display: none; 
+  transition: all 0.3s ease-in-out;  
+}
+
+#back-to-top-btn:hover {
+  background-color: #272626;
+  color: #fff;
+  transform: scale(1.1); 
 }
 
 
@@ -751,6 +785,12 @@ a.f-Instagram:hover {
   .box-shadow-full {
     padding-top: 10px !important;
   }
+  #back-to-top-btn {
+    font-size: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+} 
 }
 
 @media (max-width: 768px) {
@@ -808,5 +848,11 @@ a.f-Instagram:hover {
     color: white;
     padding: 5px;
   }
+  #back-to-top-btn {
+    font-size: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+} 
 } 
 

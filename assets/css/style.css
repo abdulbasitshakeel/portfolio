@@ -308,7 +308,7 @@ backdrop-filter: blur(6.1px)!important;
   color: white!important;
 }
 .navbar-b.navbar-reduce .navbar-toggler span {
-  background-color: #1B1B1B;
+  background-color: white!important;
 }
 .navbar-b .navbar-brand {
   color: #fff;
@@ -649,7 +649,9 @@ span.navbar-brand img {
 
 
 /* ///////////////foooterrr///////////////// */
-
+footer{
+  background-color: rgb(39, 40, 41)!important;
+}
 a.f-linkedin {
   color: white;
   padding: 5px;

@@ -6,18 +6,13 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
-  <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/img/boy.png" rel="icon">
+  <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/animate.min.css" rel="stylesheet">
-  <link href="assets/css/owl.theme.default.css" rel="stylesheet">
-  <link href="assets/css/owl.theme.green.css" rel="stylesheet">
-  <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/css/lightbox.min.css" rel="stylesheet">
   <link href="assets/css/style-sky-blue.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body id="page-top">
+<body>
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top rounded-navbar" id="mainNav">
     <div class="container d-flex justify-content-between align-items-center">
       <span class="navbar-brand"><a href="index.php"><img src="assets/img/logo.png" alt="" ></a></span>
@@ -68,7 +63,7 @@
                 </div>
                 <h1 class="intro-title mb-3">Abdul Basit Shakeel</h1>
                 <p class="intro-subtitle">
-                  <span class="text-slider-items">Web Developer, Web Designer, Frontend Developer</span>
+                  <span class="text-slider-items">Web Developer, Web Designer, Frontend Developer, UI/UX Designer, Responsive Web Designer</span>
                   <strong class="text-slider"></strong>
                 </p>
               </div>
@@ -105,7 +100,7 @@
               </div>
             </div>
           </div>
-            <div class="row mt-5">
+            <div class="row mt-4">
               <div class="col-md-12">
                 <div class="skill-mf">
                   <h5 class="title-left mb-5">Skills</h5>
@@ -159,10 +154,10 @@
       </div>
     </div>
   </section>
-  <section id="services" class="about-mf route position-sticky">
+  <section id="services" class="about-mf route position-sticky">  
     <div class="container">
       <div class="box-shadow-full">
-        <h5 class="title-left mb-4 pt-3">Services</h5>
+        <h5 class="title-left pt-3" style="margin-bottom:32px;">Services</h5>
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="card h-100 text-center shadow-sm">
@@ -235,13 +230,9 @@
   </footer>
   <div id="preloader"></div>
   <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/easing.min.js"></script>
-  <script src="assets/js/jquery.waypoints.min.js"></script>
   <script src="assets/js/jquery.counterup.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/lightbox.min.js"></script>
   <script src="assets/js/typed.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/particles.js"></script>

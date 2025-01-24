@@ -1,16 +1,16 @@
 (function ($) {
 	"use strict";
 	var nav = $('nav');
-  var navHeight = nav.outerHeight();
-  
-  $('.navbar-toggler').on('click', function() {
-    if( ! $('#mainNav').hasClass('navbar-reduce')) {
-      $('#mainNav').addClass('navbar-reduce');
-    }
+	var navHeight = nav.outerHeight();
+
+	$('.navbar-toggler').on('click', function() {
+	if( ! $('#mainNav').hasClass('navbar-reduce')) {
+	$('#mainNav').addClass('navbar-reduce');
+	}
   })
 
-  // Preloader
-  document.addEventListener("DOMContentLoaded", function () {
+	// Preloader
+	document.addEventListener("DOMContentLoaded", function () {
 	const preloader = document.getElementById("preloader");
   
 	// Simulate loading (fade out after 5 seconds)
@@ -18,20 +18,7 @@
 	  preloader.style.opacity = "0"; // Fade out
 	  preloader.style.visibility = "hidden"; // Hide preloader
 	}, 1000); // Adjust this time if needed
-  });
-
-  // Back to top button
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
-    } else {
-      $('.back-to-top').fadeOut('slow');
-    }
-  });
-  $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
-    return false;
-  });
+ 	 });
 
 	/*--/ Star ScrollTop /--*/
 	$('.scrolltop-mf').on("click", function () {
@@ -103,19 +90,13 @@
 		});
 	}
 
-	/*--/ Testimonials owl /--*/
-	$('#testimonial-mf').owlCarousel({
-		margin: 20,
-		autoplay: true,
-		autoplayTimeout: 4000,
-		autoplayHoverPause: true,
-		responsive: {
-			0: {
-				items: 1,
-			}
-		}
-	});
-
 })(jQuery);
 
+//typiny jo kar raha hai developer wagera
+$(document).ready(function () {
+	$('.counter').counterUp({
+	time: 1000, 
+	delay: 20  
+	});
+});
 

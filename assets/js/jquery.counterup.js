@@ -1,19 +1,8 @@
-/*!
- * jquery.counterup.js 2.1.0
- *
- * Copyright 2013, Benjamin Intal http://gambit.ph @bfintal
- * Released under the GPL v2 License
- *
- * Amended by Jeremy Paris, Ciro Mattia Gonano and others
- *
- * Date: Feb 24, 2017
- */
+
+//ye jo kaam hai ye hai Jquery-counterup.js ka 
 (function ($) {
     "use strict";
-
     $.fn.counterUp = function (options) {
-
-        // Defaults
         var settings = $.extend({
                 'time': 400,
                 'delay': 10,
@@ -25,10 +14,7 @@
                 }
             }, options),
             s;
-
         return this.each(function () {
-
-            // Store the object
             var $this = $(this),
                 counter = {
                     time: $(this).data('counterup-time') || settings.time,
@@ -37,7 +23,6 @@
                     beginAt: $(this).data('counterup-beginat') || settings.beginAt,
                     context: $(this).data('counterup-context') || settings.context
                 };
-
             var counterUpper = function () {
                 var nums = [];
                 var divisions = counter.time / counter.delay;
@@ -50,7 +35,6 @@
 
                 var isTime = /[0-9]+:[0-9]+:[0-9]+/.test(num);
 
-                // Convert time to total seconds
                 if (isTime) {
                     var times = num.split(':'),
                         m = 1;
@@ -61,12 +45,10 @@
                     }
                 }
 
-                // Generate list of incremental numbers to display
                 for (var i = divisions; i >= counter.beginAt / num * divisions; i--) {
 
                     var newNum = parseFloat(num / divisions * i).toFixed(decimalPlaces);
 
-                    // Add incremental seconds and convert back to time
                     if (isTime) {
                         newNum = parseInt(s / divisions * i);
                         var hours = parseInt(newNum / 3600) % 24;
@@ -75,7 +57,6 @@
                         newNum = (hours < 10 ? "0" + hours : hours) + ":" + (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds);
                     }
 
-                    // Preserve commas if input had commas
                     if (isComma) {
                         while (/(\d+)(\d{3})/.test(newNum.toString())) {
                             newNum = newNum.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
@@ -90,7 +71,6 @@
                 $this.data('counterup-nums', nums);
                 $this.text(counter.beginAt);
 
-                // Updates the number until we're done
                 var f = function () {
                     if (!$this.data('counterup-nums')) {
                         settings.callback.call(this);
@@ -107,17 +87,18 @@
                 };
                 $this.data('counterup-func', f);
 
-                // Start the count up
                 setTimeout($this.data('counterup-func'), counter.delay);
             };
 
-            // Perform counts when the element gets into view
             $this.waypoint(function (direction) {
                 counterUpper();
-                this.destroy(); //-- Waypoint 3.0 version of triggerOnce
+                this.destroy(); 
             }, {offset: counter.offset + "%", context: counter.context});
         });
 
     };
 
 })(jQuery);
+
+
+

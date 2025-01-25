@@ -45,11 +45,11 @@
     </div>
   </nav>
   <div class="sticky-icon">
-    <a href="https://www.linkedin.com/in/abdulbasitshakeel" class="linkedin"><i class="fab fa-linkedin"></i> linkedin </a>
-    <a href="https://www.instagram.com/" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
-    <a href="https://www.github.com/abdulbasitshakeel" class="Github"><i class="fab fa-github"> </i> GitHub </a>
-    <a href="https://www.facebook.com/" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
-    <a href="https://wa.me/923318035039" class="whatsapp"><i class="fab fa-whatsapp"> </i> Whatsapp </a>   
+    <a href="https://www.linkedin.com/in/abdulbasitshakeel" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i> linkedin </a>
+    <a href="https://www.github.com/abdulbasitshakeel" class="Github" target="_blank"><i class="fab fa-github"> </i> GitHub </a>
+    <a href="https://www.facebook.com/" class="Facebook" target="_blank"><i class="fab fa-facebook-f"> </i> Facebook </a>
+    <a href="#" class="Upwork" target="_blank"><i class="fab fa-upwork"></i> UpWork </a>
+    <a href="https://wa.me/923318035039" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"> </i> Whatsapp </a>   
   </div>
   <div class="intro route bg-image" id="home">
     <div class="overlay-itro" id="particles-js"></div>
@@ -100,10 +100,12 @@
               </div>
             </div>
           </div>
-            <div class="row mt-4">
+            <div class="row">
               <div class="col-md-12">
-                <div class="skill-mf fadein">
-                  <h5 class="title-left mb-5">Skills</h5>
+                <div class="skill-mf pt-4 mt-4 fadein">
+                  <div class="title-box-2">
+                    <h5 class="title-left2">Skills</h5>
+                  </div>
                   <div class="d-flex justify-content-between">
                     <span>HTML5</span> <span class="pull-right">100%</span>
                   </div>
@@ -156,52 +158,49 @@
   </section>
   <section id="services" class="about-mf route position-sticky">  
     <div class="container">
-      <div class="box-shadow-full fadein">
-        <h5 class="title-left pt-3" style="margin-bottom:32px;">Services</h5>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 text-center shadow-sm">
-              <div class="icon mt-4">
-                <i class="fa-solid fa-pen-nib"></i>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Web Design</h4>
-                <p class="card-text">I am a skilled web designer committed to crafting unique, user-friendly websites. My designs focus on both aesthetics and functionality, ensuring your website not only looks great but also performs well.</p>
+      <div class="box-shadow-full ">
+        <div class="services-mf fadein">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="about-me pt-4">
+                <div class="title-box-2">
+                  <h5 class="title-left3">Services</h5>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 text-center shadow-sm">
-              <div class="icon mt-4">
-                <i class="fa-solid fa-code"></i>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Web Development</h4>
-                <p class="card-text">I specialize in web development, creating scalable websites that meet your needs. My focus is on building high-performance sites using the latest technologies to ensure security and reliability.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 text-center shadow-sm">
-              <div class="icon mt-4">
-                <i class="fa-solid fa-bag-shopping"></i>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">E-Commerce Platform</h4>
-                <p class="card-text">I offer E-commerce services to help you build a powerful online store. From user-friendly design to secure payment systems, I ensure your E-commerce website is optimized for sales, performance, and growth.</p>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 text-center shade">
+                <div class="icon mt-4">
+                  <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Web Design</h4>
+                  <p class="card-text">I am a skilled web designer committed to crafting unique, user-friendly websites. My designs focus on both aesthetics and functionality, ensuring your website not only looks great but also performs well.</p>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 text-center shadow-sm">
-              <div class="icon mt-4">
-                <i class="fas fa-globe-europe "></i>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 text-center shade">
+                <div class="icon mt-4">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Web Development</h4>
+                  <p class="card-text">I specialize in web development, creating scalable websites that meet your needs. My focus is on building high-performance sites using the latest technologies to ensure security and reliability.</p>
+                </div>
               </div>
-              <div class="card-body">
-                <h4 class="card-title">Marketing</h4>
-                <p class="card-text">I specialize in marketing, helping businesses grow through targeted strategies and effective campaigns that drive engagement and increase sales.</p>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 text-center shade">
+                <div class="icon mt-4">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">E-Commerce Platform</h4>
+                  <p class="card-text">I offer E-commerce services to help you build a powerful online store. From user-friendly design to secure payment systems, I ensure your E-commerce website is optimized for sales, performance, and growth.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -214,16 +213,15 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <div class="footer-work">
-            <img src="assets/img/logo.png" alt="" class="mb-4">
+          <div class="footer-work"> 
             <div class="stickyy-icon">
               <a href="https://www.linkedin.com/in/abdulbasitshakeel" class="f-linkedin"><i class="fab fa-linkedin"></i></a>
-              <a href="https://www.instagram.com/" class="f-Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com/" class="f-Upwork"><i class="fab fa-upwork"></i></a>
               <a href="https://www.github.com/abdulbasitshakeel" class="f-Github"><i class="fab fa-github"> </i></a>
               <a href="https://www.facebook.com/" class="f-Facebook"><i class="fab fa-facebook-f"> </i></a>
               <a href="https://wa.me/923318035039" class="f-whatsapp"><i class="fab fa-whatsapp"> </i></a>   
             </div>
-            <p class="f-work pt-2">2025 All Rights by Reserved Abdul Basit Shakeel</p>
+            <p class="f-work pt-2 mb-1">2025 All Rights by Reserved Abdul Basit Shakeel</p>
           </div>
         </div>
       </div>

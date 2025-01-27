@@ -616,7 +616,19 @@ span.navbar-brand img {
 } 
 
 /* ///////////////experience//////////////// */
-
+.title-left4 {
+  font-size: 2rem;
+  position: relative;
+  font-family: math;
+}
+.title-left4:before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  background-color: rgb(112 120 128)!important;
+  width: 170px;
+  bottom: -12px;
+}
 
 
 /*======================================

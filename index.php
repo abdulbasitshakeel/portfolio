@@ -97,9 +97,9 @@
                   <p class="lead">
                     Let's work together to turn your ideas into a remarkable digital experience.
                   </p>
+                </div>
               </div>
             </div>
-          </div>
             <div class="row">
               <div class="col-md-12">
                 <div class="skill-mf pt-4 mt-4 fadein">
@@ -151,7 +151,16 @@
                 </div>
               </div>
             </div>
-          </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="skill-mf pt-4 mt-4 fadein">
+                  <div class="title-box-4">
+                    <h5 class="title-left4">Experience</h5>
+                  </div>
+                   
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
@@ -234,6 +243,6 @@
   <script src="assets/js/jquery.counterup.js"></script>
   <script src="assets/js/typed.min.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/particles.js"></script> 
 </body>
 </html>

@@ -156,13 +156,12 @@
                 <div class="skill-mf pt-4 mt-4 fadein">
                   <div class="title-box-4">
                     <h5 class="title-left4">Experience</h5>
-                  </div>
-                   
+                  </div>   
                 </div>
               </div>
             </div>
-        </div>
-      </div>
+          </div>
+       </div>
     </div>
   </section>
   <section id="services" class="about-mf route position-sticky">  

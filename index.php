@@ -153,10 +153,68 @@
             </div>
             <div class="row">
               <div class="col-md-12">
-                <div class="skill-mf pt-4 mt-4 fadein">
-                  <div class="title-box-4">
-                    <h5 class="title-left4">Experience</h5>
-                  </div>   
+                <div class="skill-mf pt-4 mt-4 fadein"> 
+                  <div class="exp-edu-container">
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <button class="split-button activee" onclick="togglePricing('payg')">Experience</button>
+                        <button class="split-button activee" onclick="togglePricing('annual')">Education</button>
+                      </div> 
+                      <div class="row" id="exp-edu-cards"> 
+                        <div class="col-md-6 col-sm-6 content-card" id="payg-free">
+                          <div class="card-big-shadow">
+                            <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
+                              <div class="content">
+                                <!-- <h6 class="category">Experience</h6> -->
+                                <h4 class="title"><a href="#">SYNQUIX</a></h4>
+                                <p class="description">As a Web Developer at SYNQUIX, I specialize in building responsive and user friendly websites from scratch using HTML5, CSS3, Bootstrap, and JavaScript. I focus on creating visually appealing and efficient web solutions that enhance user experience.</p>
+                                <p class="description">Mar 2022 - Present</p>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 content-card" id="payg-free">
+                          <div class="card-big-shadow">
+                            <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
+                            <div class="content">
+                                <!-- <h6 class="category">Experience</h6> -->
+                                <h4 class="title"><a href="#" >BLUE SEA AGENCY</a></h4>
+                                <p class="description">As a Computer Operator at BLUE SEA AGENCY, I managed financial records, client services, operations, and data solutions with accuracy and efficiency. I also handled billing adjustments to ensure seamless transaction processing. Additionally.</p>
+                                <p class="description">Mar 2018 - Dec 2020</p>
+                              </div>
+                            </div>  
+                          </div>
+                        </div> 
+                      </div> 
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6 content-card" id="annual-free" style="display:none;">
+                          <div class="card-big-shadow">
+                              <div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
+                                <div class="content">
+                                  <!-- <h6 class="category">Education</h6> -->
+                                  <h4 class="title"><a href="#">INTERMEDIATE</a></h4>
+                                  <p class="description">
+                                  Anees Hassan College, Hyderabad, is known for its quality education and supportive learning environment. I completed my intermediate studies there. The college fostered personal growth and provided a solid foundation for my future endeavors.</p>
+                                  <p class="description">Graduation: 2024</p>
+                                </div>
+                              </div>  
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 content-card" id="annual-free" style="display:none;">
+                            <div class="card-big-shadow">
+                                <div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
+                                  <div class="content">
+                                    <!-- <h6 class="category">Education</h6> -->
+                                    <h4 class="title"><a href="#">MATRICULATION</a></h4>
+                                    <p class="description">The Promising High School is renowned for its excellent education and nurturing environment. I completed my matriculation studies there, which helped me build a strong foundation for my future. The school’s supportive atmosphere contributed to my academic and personal growth.</p>
+                                    <p class="description">Graduated: 2022</p>
+                                  </div>
+                                </div> 
+                            </div>
+                        </div> 
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -242,6 +300,7 @@
   <script src="assets/js/jquery.counterup.js"></script>
   <script src="assets/js/typed.min.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/particles.js"></script> 
+  <script src="assets/js/jquery.propper.js"></script>
+  <script src="assets/js/particles.js"></script>    
 </body>
 </html>

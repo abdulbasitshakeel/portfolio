@@ -137,5 +137,46 @@ button.addEventListener("click", () => {
     });
 });
 
+function togglePricing(type) {
+    var paygCards = document.querySelectorAll('div[id^="payg"]');  
+    var annualCards = document.querySelectorAll('div[id^="annual"]');  
+    var toggleButtons = document.querySelectorAll('.toggle-button');
+    
+    // Add flipping animation
+    let allCards = [...paygCards, ...annualCards];
+    allCards.forEach(function(card) {
+        card.style.transition = 'transform 0.6s, opacity 0.6s';
+        card.style.transform = 'rotateY(90deg)';
+        card.style.opacity = '0';
+    });
+    
+    setTimeout(() => {
+        // Hide all cards
+        paygCards.forEach(function(card) {
+            card.style.display = 'none';
+        });
+        annualCards.forEach(function(card) {
+            card.style.display = 'none';
+        });
+        
+        // Show selected cards
+        let selectedCards = type === 'payg' ? paygCards : annualCards;
+        selectedCards.forEach(function(card) {
+            card.style.display = 'block';
+            setTimeout(() => {
+                card.style.transform = 'rotateY(0deg)';
+                card.style.opacity = '1';
+            }, 50); // Small delay to allow display change to take effect
+        });
+        
+        // Update button states
+        toggleButtons.forEach(btn => btn.classList.remove('active'));
+        document.querySelector(`.toggle-button[data-type="${type}"]`).classList.add('active');
+    }, 300); // Delay to match the flip animation
+} 
+
+// Initialize with Pay As You Go cards visible
+togglePricing('payg');
+
 
 

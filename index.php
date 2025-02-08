@@ -48,7 +48,7 @@
     <a href="https://www.linkedin.com/in/abdulbasitshakeel" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i> linkedin </a>
     <a href="https://www.github.com/abdulbasitshakeel" class="Github" target="_blank"><i class="fab fa-github"> </i> GitHub </a>
     <a href="https://www.facebook.com/" class="Facebook" target="_blank"><i class="fab fa-facebook-f"> </i> Facebook </a>
-    <a href="#" class="Upwork" target="_blank"><i class="fab fa-upwork"></i> UpWork </a>
+    <a href="https://www.upwork.com/freelancers/~016d565e19c48a4b34?mp_source=share" class="Upwork" target="_blank"><i class="fab fa-upwork"></i> UpWork </a>
     <a href="https://wa.me/923318035039" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"> </i> Whatsapp </a>   
   </div>
   <div class="intro route bg-image" id="home">

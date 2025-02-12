@@ -61,9 +61,9 @@
                 <div class="about-img mb-3">
                   <img src="assets/img/profile.png" class="img-fluid rounded-circle b-shadow-a" alt="Profile Image">
                 </div>
-                <h1 class="intro-title mb-3">Abdul Basit Shakeel</h1>
+                <h1 class="intro-title mb-3">Abdul Basit <span>Shakeel<span></h1>
                 <p class="intro-subtitle">
-                  <span class="text-slider-items">Web Developer, Web Designer, Frontend Developer, UI/UX Designer, Responsive Web Designer</span>
+                  <span class="text-slider-items">Web Developer, Web Designer, Frontend Developer, Responsive Web Designer</span>
                   <strong class="text-slider"></strong>
                 </p>
               </div>
@@ -157,15 +157,16 @@
                   <div class="exp-edu-container">
                     <div class="row">
                       <div class="col-12 text-center">
-                        <button class="split-button activee" onclick="togglePricing('payg')">Experience</button>
-                        <button class="split-button activee" onclick="togglePricing('annual')">Education</button>
+                        <div class="multi-button">
+                          <button class="split-button activee" onclick="togglePricing('payg')">Experience</button>
+                          <button class="split-button activee" onclick="togglePricing('annual')">Education</button>
+                        </div> 
                       </div> 
                       <div class="row" id="exp-edu-cards"> 
                         <div class="col-md-6 col-sm-6 content-card" id="payg-free">
                           <div class="card-big-shadow">
                             <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
                               <div class="content">
-                                <!-- <h6 class="category">Experience</h6> -->
                                 <h4 class="title"><a href="#">SYNQUIX</a></h4>
                                 <p class="description">As a Web Developer at SYNQUIX, I specialize in building responsive and user friendly websites from scratch using HTML5, CSS3, Bootstrap, and JavaScript. I focus on creating visually appealing and efficient web solutions that enhance user experience.</p>
                                 <p class="description">Mar 2022 - Present</p>
@@ -177,7 +178,6 @@
                           <div class="card-big-shadow">
                             <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
                             <div class="content">
-                                <!-- <h6 class="category">Experience</h6> -->
                                 <h4 class="title"><a href="#" >BLUE SEA AGENCY</a></h4>
                                 <p class="description">As a Computer Operator at BLUE SEA AGENCY, I managed financial records, client services, operations, and data solutions with accuracy and efficiency. I also handled billing adjustments to ensure seamless transaction processing. Additionally.</p>
                                 <p class="description">Mar 2018 - Dec 2020</p>

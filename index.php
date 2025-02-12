@@ -243,7 +243,7 @@
                 </div>
                 <div class="card-body">
                   <h4 class="card-title">Web Design</h4>
-                  <p class="card-text">I am a skilled web designer committed to crafting unique, user-friendly websites. My designs focus on both aesthetics and functionality, ensuring your website not only looks great but also performs well.</p>
+                  <p class="card-text">I am a skilled web designer crafting unique, user-friendly websites. My designs merge aesthetics with functionality, ensuring your site looks stunning while delivering performance.</p>
                 </div>
               </div>
             </div>
@@ -254,7 +254,7 @@
                 </div>
                 <div class="card-body">
                   <h4 class="card-title">Web Development</h4>
-                  <p class="card-text">I specialize in web development, creating scalable websites that meet your needs. My focus is on building high-performance sites using the latest technologies to ensure security and reliability.</p>
+                  <p class="card-text">I specialize in web development, creating scalable websites. My focus is on building high-performance sites using the latest technologies for security and reliability</p>
                 </div>
               </div>
             </div>
@@ -265,7 +265,7 @@
                 </div>
                 <div class="card-body">
                   <h4 class="card-title">E-Commerce Platform</h4>
-                  <p class="card-text">I offer E-commerce services to help you build a powerful online store. From user-friendly design to secure payment systems, I ensure your E-commerce website is optimized for sales, performance, and growth.</p>
+                  <p class="card-text">I offer E-commerce services to build a powerful store. From user-friendly design to secure payments, I ensure your E-commerce site is optimized for sales, performance, growth</p>
                 </div>
               </div>
             </div>

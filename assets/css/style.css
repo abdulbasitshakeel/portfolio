@@ -769,7 +769,6 @@ span.navbar-brand img {
 }
 .card {
   text-align: center;
-  margin: 10px;
   background: rgb(39, 40, 41)!important;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -807,8 +806,7 @@ span.navbar-brand img {
 
 .card p {
   font-size: 16px;
-  margin: 20px auto;
-  padding: 0 20px;
+  margin: 20px auto; 
 }
 
 /*btn back to work*/

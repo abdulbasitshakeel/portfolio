@@ -201,16 +201,16 @@
                           </div>
                         </div>
                         <div class="col-md-6 col-sm-6 content-card" id="annual-free" style="display:none;">
-                            <div class="card-big-shadow">
-                                <div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
-                                  <div class="content">
-                                    <!-- <h6 class="category">Education</h6> -->
-                                    <h4 class="title"><a href="#">MATRICULATION</a></h4>
-                                    <p class="description">The Promising High School is renowned for its excellent education and nurturing environment. I completed my matriculation studies there, which helped me build a strong foundation for my future. The school’s supportive atmosphere contributed to my academic and personal growth.</p>
-                                    <p class="description">Graduated: 2022</p>
-                                  </div>
-                                </div> 
-                            </div>
+                          <div class="card-big-shadow">
+                            <div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
+                              <div class="content">
+                                <!-- <h6 class="category">Education</h6> -->
+                                <h4 class="title"><a href="#">MATRICULATION</a></h4>
+                                <p class="description">The Promising High School is renowned for its excellent education and nurturing environment. I completed my matriculation studies there, which helped me build a strong foundation for my future. The school’s supportive atmosphere contributed to my academic and personal growth.</p>
+                                <p class="description">Graduated: 2022</p>
+                              </div>
+                            </div> 
+                          </div>
                         </div> 
                       </div>
                     </div>

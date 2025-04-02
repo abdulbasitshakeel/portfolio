@@ -638,8 +638,9 @@ span.navbar-brand img {
 }
 
 .multi-button button + button {
-  border-left: 2px solid black;
-  margin-left: -2px;
+    border-left: 2px solid black;
+    margin-left: -2px;
+    padding: 9px 8px 9px 3px;
 }
 
 .multi-button button:hover,
@@ -732,7 +733,9 @@ span.navbar-brand img {
   font-weight: 700;
   font-size: 30px;
 }
-
+.institute-name a {
+  color: white;
+}
 
 /*======================================
 //--//-->   SERVICES
@@ -806,6 +809,195 @@ span.navbar-brand img {
 .card p {
   font-size: 16px;
   margin: 20px auto; 
+}
+
+/*======================================
+//--//-->   Project Work
+======================================*/
+.project-card {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: 21.875rem;
+  height: 28.125rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.project-card > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.project-card__background {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 500ms ease-in;
+}
+
+.project-card__content {
+  --project-flow-space: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  height: 55%;
+  padding: 12% 1.25rem 1.875rem;
+  background: linear-gradient(
+      180deg,
+      hsla(0, 0%, 0%, 0) 0%,
+      hsla(0, 0%, 0%, 0.3) 10%,
+      hsl(0, 0%, 0%) 100%
+  );
+  z-index: 2;
+  width: 100%;
+}
+
+.project-card__content--container {
+  --project-flow-space: 1.25rem;
+}
+
+.project-card__title {
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content;
+  font-size: 2.25rem;
+  font-family: var(--project-font-title);
+  color: var(--project-white);
+  line-height: 1.1;
+}
+
+.project-card__title::after {
+  content: "";
+  position: absolute;
+  height: 0.3125rem;
+  width: calc(100% + 1.25rem);
+  bottom: calc((1.25rem - 0.5rem) * -1);
+  left: -1.25rem;
+  background-color: var(--project-brand-color);
+}
+
+.project-card__description {
+  font-family: var(--project-font-text);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--project-white);
+}
+
+.project-card__button {
+  padding: 0.75em 1.6em;
+  width: fit-content;
+  width: -moz-fit-content;
+  font-variant: small-caps;
+  font-weight: bold;
+  border-radius: 0.45em;
+  border: none;
+  background-color: var(--project-brand-color);
+  font-family: var(--project-font-title);
+  font-size: 1.125rem;
+  color: var(--project-black);
+  cursor: pointer;
+  transition: opacity 500ms ease-out;
+}
+
+.project-card__button:focus {
+  outline: 2px solid black;
+  outline-offset: -5px;
+}
+
+/* Hover and focus effects */
+@media (any-hover: hover) and (any-pointer: fine) {
+  .project-card__content {
+      transform: translateY(62%);
+      transition: transform 500ms ease-out;
+      transition-delay: 500ms;
+  }
+
+  .project-card__title::after {
+      opacity: 0;
+      transform: scaleX(0);
+      transition: opacity 1000ms ease-in, transform 500ms ease-out;
+      transition-delay: 500ms;
+      transform-origin: right;
+  }
+
+  .project-card__content--container > :not(.project-card__title),
+  .project-card__button {
+      opacity: 0;
+      transition: transform 500ms ease-out, opacity 500ms ease-out;
+  }
+
+  .project-card:hover,
+  .project-card:focus-within {
+      transform: scale(1.05);
+      transition: transform 500ms ease-in;
+  }
+
+  .project-card:hover .project-card__content,
+  .project-card:focus-within .project-card__content {
+      transform: translateY(0);
+      transition: transform 500ms ease-in;
+  }
+
+  .project-card:focus-within .project-card__content {
+      transition-duration: 0ms;
+  }
+
+  .project-card:hover .project-card__background,
+  .project-card:focus-within .project-card__background {
+      transform: scale(1.3);
+  }
+
+  .project-card:hover .project-card__content--container > :not(.project-card__title),
+  .project-card:hover .project-card__button,
+  .project-card:focus-within .project-card__content--container > :not(.project-card__title),
+  .project-card:focus-within .project-card__button {
+      opacity: 1;
+      transition: opacity 500ms ease-in;
+      transition-delay: 1000ms;
+  }
+
+  .project-card:hover .project-card__title::after,
+  .project-card:focus-within .project-card__title::after {
+      opacity: 1;
+      transform: scaleX(1);
+      transform-origin: left;
+      transition: opacity 500ms ease-in, transform 500ms ease-in;
+      transition-delay: 500ms;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-card {
+      height: 25rem;
+  }
+  
+  .project-card__title {
+      font-size: 1.8rem;
+  }
+  
+  .project-card__description {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+      height: 22rem;
+  }
+  
+  .project-card__title {
+      font-size: 1.5rem;
+  }
+  
+  .project-card__button {
+      font-size: 1rem;
+      padding: 0.6em 1.4em;
+  }
 }
 
 /*btn back to work*/

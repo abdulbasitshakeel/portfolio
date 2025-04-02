@@ -34,7 +34,7 @@
             <a class="nav-link js-scroll" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Project</a>
+            <a class="nav-link js-scroll" href="#projects">Project</a>
           </li>
         </ul>
         <div class="d-flex flex-row align-items-center ml-auto">
@@ -113,34 +113,64 @@
                     <div class="progress-bar rounded" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div class="d-flex justify-content-between">
-                    <span>CSS3</span> <span class="pull-right">95%</span>
+                    <span>CSS3 (Flex, Grid)</span> <span class="pull-right">100%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar rounded" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span>Javascript</span> <span class="pull-right">90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar rounded" role="progressbar" style="width:90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span>Bootstrap</span> <span class="pull-right">95%</span>
                   </div>
                   <div class="progress">
                     <div class="progress-bar rounded" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div class="d-flex justify-content-between">
-                    <span>Javascript</span> <span class="pull-right">75%</span>
+                    <span>JQuery</span> <span class="pull-right">80%</span>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar rounded" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar rounded" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div class="d-flex justify-content-between">
-                    <span>Bootstrap</span> <span class="pull-right">90%</span>
+                    <span>E-Commerce</span> <span class="pull-right">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar rounded" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span>Git & Github</span> <span class="pull-right">90%</span>
                   </div>
                   <div class="progress">
                     <div class="progress-bar rounded" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div class="d-flex justify-content-between">
-                    <span>JQuery</span> <span class="pull-right">50%</span>
+                    <span>Web Design</span> <span class="pull-right">95%</span>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar rounded" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar rounded" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div class="d-flex justify-content-between">
-                    <span>MySQL</span> <span class="pull-right">80%</span>
+                    <span>PSD to HTML5</span> <span class="pull-right">100%</span>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar rounded" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar rounded" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span>Front-End Development</span> <span class="pull-right">100%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar rounded" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span>Responsive Web Design</span> <span class="pull-right">100%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar rounded" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div class="d-flex justify-content-between">
                     <span>Full Website Creation</span> <span class="pull-right">100%</span>
@@ -159,17 +189,20 @@
                       <div class="col-12 text-center">
                         <div class="multi-button">
                           <button class="split-button activee" onclick="togglePricing('payg')">Experience</button>
-                          <button class="split-button activee" onclick="togglePricing('annual')">Education</button>
+                          <button class="split-button" onclick="togglePricing('annual')">Education</button>
+                          <button class="split-button" onclick="togglePricing('cert')">Certifications</button>
                         </div> 
                       </div> 
+                      
+                      <!-- Experience Cards -->
                       <div class="row" id="exp-edu-cards"> 
                         <div class="col-md-6 col-sm-6 content-card" id="payg-free">
                           <div class="card-big-shadow">
                             <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
                               <div class="content">
-                                <h4 class="title"><a href="#">SYNQUIX</a></h4>
-                                <p class="description">As a Web Developer at SYNQUIX, I specialize in building responsive and user friendly websites from scratch using HTML5, CSS3, Bootstrap, and JavaScript. I focus on creating visually appealing and efficient web solutions that enhance user experience.</p>
-                                <p class="description">Mar 2022 - Present</p>
+                                <h4 class="title"><a href="#">Synquix</a></h4>
+                                <p class="description">As a Frontend Web Developer at SYNQUIX, I specialize in building responsive and user friendly websites from scratch using HTML5, CSS3, Bootstrap, and JavaScript. I focus on creating visually appealing and efficient web solutions that enhance user experience.</p>
+                                <p class="description">Mar 2024 - Present</p>
                               </div>
                             </div>  
                           </div>
@@ -177,41 +210,91 @@
                         <div class="col-md-6 col-sm-6 content-card" id="payg-free">
                           <div class="card-big-shadow">
                             <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
-                            <div class="content">
-                                <h4 class="title"><a href="#" >BLUE SEA AGENCY</a></h4>
-                                <p class="description">As a Computer Operator at BLUE SEA AGENCY, I managed financial records, client services, operations, and data solutions with accuracy and efficiency. I also handled billing adjustments to ensure seamless transaction processing. Additionally.</p>
+                              <div class="content">
+                                <h4 class="title"><a href="#">Grands Digital (Internship)</a></h4>
+                                <p class="description">As a Web Development Intern at GRANDS DIGITAL, I assist in building responsive and user-friendly websites from scratch using HTML5, CSS3, Bootstrap, and JavaScript. I focus on enhancing skills and contributing to efficient web solutions that improve user experience.</p>
+                                <p class="description">Dec 2024 - Feb 2025</p>
+                              </div>
+                            </div>  
+                          </div>
+                        </div> 
+                        <div class="col-md-6 col-sm-6 content-card" id="payg-free">
+                          <div class="card-big-shadow">
+                            <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
+                              <div class="content">
+                                <h4 class="title"><a href="#">Blue Sea Agency</a></h4>
+                                <p class="description">As a Computer Operator at BLUE SEA AGENCY, I managed financial records, client services, operations, and data solutions with accuracy and efficiency. I also handled billing adjustments to ensure seamless transaction processing.</p>
                                 <p class="description">Mar 2018 - Dec 2020</p>
                               </div>
                             </div>  
                           </div>
                         </div> 
                       </div> 
+                      
+                      <!-- Education Cards -->
                       <div class="row">
                         <div class="col-md-6 col-sm-6 content-card" id="annual-free" style="display:none;">
                           <div class="card-big-shadow">
-                              <div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
-                                <div class="content">
-                                  <!-- <h6 class="category">Education</h6> -->
-                                  <h4 class="title"><a href="#">INTERMEDIATE</a></h4>
-                                  <p class="description">
-                                  Anees Hassan College, Hyderabad, is known for its quality education and supportive learning environment. I completed my intermediate studies there. The college fostered personal growth and provided a solid foundation for my future endeavors.</p>
-                                  <p class="description">Graduation: 2024</p>
-                                </div>
-                              </div>  
+                            <div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
+                              <div class="content">
+                                <h4 class="title"><a href="#">INTERMEDIATE</a></h4>
+                                <p class="description">Anees Hassan College, Hyderabad, is known for its quality education and supportive learning environment. I completed my intermediate studies there. The college fostered personal growth and provided a solid foundation for my future endeavors.</p>
+                                <p class="description">Graduation: 2024</p>
+                              </div>
+                            </div>  
                           </div>
                         </div>
                         <div class="col-md-6 col-sm-6 content-card" id="annual-free" style="display:none;">
                           <div class="card-big-shadow">
                             <div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
                               <div class="content">
-                                <!-- <h6 class="category">Education</h6> -->
                                 <h4 class="title"><a href="#">MATRICULATION</a></h4>
-                                <p class="description">The Promising High School is renowned for its excellent education and nurturing environment. I completed my matriculation studies there, which helped me build a strong foundation for my future. The school’s supportive atmosphere contributed to my academic and personal growth.</p>
+                                <p class="description">The Promising High School is renowned for its excellent education and nurturing environment. I completed my matriculation studies there, which helped me build a strong foundation for my future. The school's supportive atmosphere to my academic and growth.</p>
                                 <p class="description">Graduated: 2022</p>
                               </div>
                             </div> 
                           </div>
                         </div> 
+                      </div>
+                      
+                      <!-- Certifications Cards -->
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6 content-card" id="cert-free" style="display:none;">
+                          <div class="card-big-shadow">
+                            <div class="card card-just-text" data-background="color" data-color="purple" data-radius="none">
+                              <div class="content">
+                                <h4 class="title"><a href="#">Web Development Certification</a></h4>
+                                <h6 class="institute-name">( Aptech Learning Hyderabad )</h6>
+                                <p class="description">Certified in modern Web Development technologies including HTML5, CSS3, JavaScript, jQuery, and Bootstrap. Completing intensive training program with hands-on projects and assessments.</p>
+                                <p class="description">Jan 2024 - Present</p>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 content-card" id="cert-free" style="display:none;">
+                          <div class="card-big-shadow">
+                            <div class="card card-just-text" data-background="color" data-color="purple" data-radius="none">
+                              <div class="content">
+                                <h4 class="title"><a href="#"> Web Development (Internship)</a></h4>
+                                <h6 class="institute-name">(  Verge Systems )</h6>
+                                <p class="description">Certified in cutting-edge web technologies including HTML5, CSS3, JavaScript, jQuery, and Bootstrap. Successfully completed an intensive training program with practical projects and assessments.</p>
+                                <p class="description">Jan 2024 - Apr 2024</p>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 content-card" id="cert-free" style="display:none;">
+                          <div class="card-big-shadow">
+                            <div class="card card-just-text" data-background="color" data-color="purple" data-radius="none">
+                              <div class="content">
+                                <h4 class="title"><a href="#">Certificate in Information Technology</a></h4>
+                                <h6 class="institute-name">(  Pixel House Hyderabad )</h6>
+                                <p class="description">Empowering minds with cutting-edge technology,Building the future with skills that inspire.</p>
+                                <p class="description">Mar 2023 - July 2023</p>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -268,6 +351,46 @@
                   <p class="card-text">I offer E-commerce services to build a powerful store. From user-friendly design to secure payments, I ensure your E-commerce site is optimized for sales, performance, growth</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="about-mf route position-sticky">  
+    <div class="container">
+      <div class="box-shadow-full ">
+        <div class="services-mf fadein">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="about-me pt-4">
+                <div class="title-box-2">
+                  <h5 class="title-left3">Projects</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+            <article class="project-card">
+        <img
+            class="project-card__background"
+            src="https://i.imgur.com/QYWAcXk.jpeg"
+            alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+            width="1920"
+            height="2193"
+        />
+        <div class="project-card__content project-flow">
+            <div class="project-card__content--container project-flow">
+                <h2 class="project-card__title">Colombia</h2>
+                <p class="project-card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                    labore laudantium deserunt fugiat numquam.
+                </p>
+            </div>
+            <button class="project-card__button">Read more</button>
+        </div>
+    </article>
             </div>
           </div>
         </div>

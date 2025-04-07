@@ -38,7 +38,7 @@
           </li>
         </ul>
         <div class="d-flex flex-row align-items-center ml-auto">
-          <a class="btn btn-outline-light resume-btn ms-3" href="#">Resume</a>
+          <a class="btn btn-outline-light resume-btn ms-3" href="#" onclick="window.location.href='assets/img/basit frontend developer.pdf'">Resume</a>
           <a class="btn btn-light hire-btn" href="#">Hire Me</a>
         </div>
       </div>
@@ -63,7 +63,7 @@
                 </div>
                 <h1 class="intro-title mb-3">Abdul Basit <span>Shakeel<span></h1>
                 <p class="intro-subtitle">
-                  <span class="text-slider-items">Web Developer, Web Designer, Frontend Developer, Responsive Web Designer</span>
+                  <span class="text-slider-items">Frontend Developer,Web Developer, Web Designer, Responsive Web Designer</span>
                   <strong class="text-slider"></strong>
                 </p>
               </div>
@@ -371,26 +371,69 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 col-lg-4 mb-4">
-            <article class="project-card">
-        <img
-            class="project-card__background"
-            src="https://i.imgur.com/QYWAcXk.jpeg"
-            alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-            width="1920"
-            height="2193"
-        />
-        <div class="project-card__content project-flow">
-            <div class="project-card__content--container project-flow">
-                <h2 class="project-card__title">Colombia</h2>
-                <p class="project-card__description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-                    labore laudantium deserunt fugiat numquam.
-                </p>
+            <div class="col-md-12">
+              <div class="preview-card">
+                <div class="preview-card__wrp">
+                  <div class="preview-card__item">
+                    <div class="preview-card__img">
+                      <img src="assets/img/synquix.png" alt="Synquix">
+                    </div>
+                    <div class="preview-card__content">
+                      <div class="preview-card__title">Synquix - Innovation Defines Excellence</div>
+                      <div class="preview-card__text">At Synquix, we push the boundaries of technology to deliver innovative solutions that redefine success. Our commitment to excellence drives us to transform ideas into impactful realities, empowering businesses to thrive in a dynamic digital world.</div>
+                      <a href="https://synquix.com/" target="_blank" class="preview-card__button">Visit</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <button class="project-card__button">Read more</button>
-        </div>
-    </article>
+            <div class="col-md-12">
+              <div class="preview-card">
+                <div class="preview-card__wrp">
+                  <div class="preview-card__item">
+                    <div class="preview-card__img">
+                      <img src="assets/img/Nova.png" alt="Synquix">
+                    </div>
+                    <div class="preview-card__content">
+                      <div class="preview-card__title">TechNova - Shaping with Innovation</div>
+                      <div class="preview-card__text">At TechNova, we blend cutting-edge technology with visionary thinking to create solutions that drive progress. Our passion for innovation empowers businesses to thrive in an ever-evolving digital landscape, making tomorrow's possibilities a reality today.</div>
+                      <a href="https://tech-nova-alpha.vercel.app/" target="_blank" class="preview-card__button">Visit</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="preview-card">
+                <div class="preview-card__wrp">
+                  <div class="preview-card__item">
+                    <div class="preview-card__img">
+                      <img src="assets/img/Nova2.png" alt="Synquix">
+                    </div>
+                    <div class="preview-card__content">
+                      <div class="preview-card__title">Solid - Build Digital Experiences with React</div>
+                      <div class="preview-card__text">At Solid, we leverage the power of React to create dynamic, high-performance web applications that deliver seamless user experiences. With a focus on speed, scalability, and maintainability, we provide innovative solutions that are both cutting-edge and reliable. Whether you're building from scratch or enhancing existing projects, Solid ensures your React apps stand strong in today's fast-evolving digital landscape.</div>
+                      <a href="https://solidwebsite.vercel.app/" target="_blank" class="preview-card__button">Visit</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="preview-card">
+                <div class="preview-card__wrp">
+                  <div class="preview-card__item">
+                    <div class="preview-card__img">
+                      <img src="assets/img/Nova3.png" alt="Synquix">
+                    </div>
+                    <div class="preview-card__content">
+                      <div class="preview-card__title">AutoElegance - Automotive Excellence</div>
+                      <div class="preview-card__text">At AutoElegance, we combine advanced technology with sleek design to deliver unparalleled automotive solutions. Whether you're looking to optimize performance, enhance aesthetics, or integrate innovative features, AutoElegance ensures every vehicle embodies sophistication and precision. Drive into the future with a blend of elegance and cutting-edge innovation.</div>
+                      <a href="https://elegenace.vercel.app/" target="_blank" class="preview-card__button">Visit</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

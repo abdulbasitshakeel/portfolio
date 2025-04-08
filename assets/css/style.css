@@ -616,44 +616,90 @@ span.navbar-brand img {
 } 
 
 /* ///////////////experience//////////////// */ 
-.multi-button {
+.button-container {
   display: flex;
-  box-shadow: rgba(0, 0, 0, 0.1) 4px 4px;
-  margin-bottom: 25px;
-  justify-self: anchor-center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
-.multi-button button {
-  flex-grow: 1;
+.multi-button {
+  display: inline-flex; /* Changed to inline-flex for better centering */
+  gap: 8px;
+  background: #f5f5f5;
+  padding: 6px;
+  border-radius: 12px;
+  max-width: 100%;
+}
+
+.split-button {
+  padding: 12px 24px;
+  border: none;
+  background: transparent;
+  color: #555;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s ease;
   position: relative;
-  padding: 5px; 
-  color: white;
-  background-color:rgb(39, 40, 41);
-  font-size: 19px;
-  text-shadow: rgba(0, 0, 0, 0.1) 2px 2px;
-  transition: flex-grow 250ms cubic-bezier(0.215, 0.61, 0.355, 1), width 0.3s ease;
-  width: 120px; /* Default button width */
-  text-align: center;
+  overflow: hidden;
+  white-space: nowrap; /* Prevents text wrapping */
 }
 
-.multi-button button + button {
-    border-left: 2px solid black;
-    margin-left: -2px;
-    padding: 9px 8px 9px 3px;
+.split-button:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #333;
+  transform: translateY(-2px); /* Better hover effect */
 }
 
-.multi-button button:hover,
-.multi-button button:focus {
-  flex-grow: 2;
-  color: white;
-  background-color: rgb(70, 71, 73);
-  outline: none;
-  text-shadow: none;
-  width: 150px; /* Increase width on hover */
-}     
-.multi-button button:active {
-  transform: translateY(2px);
+.split-button.activee {
+  background: white;
+  color: #555;
+  box-shadow: 0 4px 12px rgba(12, 31, 59, 0.2);
+}
+
+/* Ripple effect */
+.split-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(20, 31, 48, 0.2) 1%, transparent 1%) center/15000%;
+  opacity: 0;
+  transition: opacity 0.5s, background-size 0.5s;
+}
+
+.split-button:active::after {
+  background-size: 100%;
+  opacity: 1;
+  transition: 0s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .multi-button {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .split-button {
+    padding: 10px 16px;
+    font-size: 13px;
+    flex: 1 1 30%; /* Allows 3 buttons per row */
+    min-width: 0; /* Overrides previous min-width */
+  }
+}
+
+@media (max-width: 480px) {
+  .split-button {
+    flex: 1 1 45%; /* 2 buttons per row on very small screens */
+    padding: 8px 12px;
+  }
 }
 
 
@@ -817,8 +863,8 @@ span.navbar-brand img {
 .preview-card {
   position: relative;
   margin: 15px;
-  background: #fff;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  background: rgb(39, 40, 41) !important;
+  box-shadow: 0 0.125rem 1.25rem rgb(33 29 29) !important;
   padding: 30px;
   border-radius: 20px;
   transition: all 0.3s;
@@ -863,22 +909,22 @@ span.navbar-brand img {
 .preview-card__title {
   font-size: 28px;
   font-weight: 700;
-  color: #0d0925;
+  color: white;
   margin-bottom: 10px;
 }
 
 .preview-card__text {
-  color: #4e4a67;
+  color: white;
   margin-bottom: 15px;
   line-height: 1.6;
 }
 
 .preview-card__button {
   display: inline-block;
-  background: black;
+  background: white;
   padding: 8px 30px;
   border-radius: 50px;
-  color: #fff;
+  color: black;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s;
@@ -886,7 +932,8 @@ span.navbar-brand img {
 }
 
 .preview-card__button:hover {
-  color: white;
+  color: black;
+  background-color: whitesmoke;
 }
 
 .preview-card__code {
@@ -926,7 +973,11 @@ span.navbar-brand img {
 
 @media (max-width: 576px) {
   .preview-card {
-    padding: 20px;
+      padding: 10px;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
   }
   
   .preview-card__title {
@@ -937,6 +988,19 @@ span.navbar-brand img {
     width: 100%;
     text-align: center;
   }
+  .preview-card__content {
+    flex: 1;
+    min-width: 0px;
+    padding: 20px 0;
+}
+.card {
+  margin: 11px;
+}
+
+.card-just-text {
+  padding: 0px;
+  text-align: center;
+}
 }
 
 /*btn back to work*/
@@ -1092,6 +1156,14 @@ a.f-Upwork:hover {
   .sticky-icon{
     display: none;
   }
+  .card {
+    margin: 11px;
+}
+
+.card-just-text {
+    padding: 0px;
+    text-align: center;
+}
 }
 
 @media (max-width: 414px) {

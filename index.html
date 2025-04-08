@@ -12,10 +12,10 @@
   <link href="assets/css/style-sky-blue.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body >
+<body>
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top rounded-navbar" id="mainNav">
     <div class="container d-flex justify-content-between align-items-center">
-      <span class="navbar-brand"><a href="index.php"><img src="assets/img/logo.png" alt="" ></a></span>
+      <span class="navbar-brand"><a href="index.html"><img src="assets/img/logo.png" alt="" ></a></span>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
@@ -38,8 +38,8 @@
           </li>
         </ul>
         <div class="d-flex flex-row align-items-center ml-auto">
-          <a class="btn btn-outline-light resume-btn ms-3" href="#" onclick="window.location.href='assets/img/basit frontend developer.pdf'">Resume</a>
-          <a class="btn btn-light hire-btn" href="#">Hire Me</a>
+          <a class="btn btn-outline-light resume-btn ms-3" href="assets/img/basit-frontend.pdf" download>Resume</a>
+          <a class="btn btn-light hire-btn" href="mailto:basitshakeel2005@gmail.com">Hire Me</a>
         </div>
       </div>
     </div>
@@ -187,11 +187,13 @@
                   <div class="exp-edu-container">
                     <div class="row">
                       <div class="col-12 text-center">
-                        <div class="multi-button">
-                          <button class="split-button activee" onclick="togglePricing('payg')">Experience</button>
-                          <button class="split-button" onclick="togglePricing('annual')">Education</button>
-                          <button class="split-button" onclick="togglePricing('cert')">Certifications</button>
-                        </div> 
+                        <div class="button-container">
+                          <div class="multi-button">
+                            <button class="split-button activee" onclick="togglePricing('payg')">Experience</button>
+                            <button class="split-button" onclick="togglePricing('annual')">Education</button>
+                            <button class="split-button" onclick="togglePricing('cert')">Certifications</button>
+                          </div>
+                        </div>
                       </div> 
                       
                       <!-- Experience Cards -->
@@ -440,7 +442,6 @@
       </div>
     </div>
   </section>
-  <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
   <footer class="pb-3 pt-3">
     <div class="container">
       <div class="row">

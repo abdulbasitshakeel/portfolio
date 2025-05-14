@@ -660,7 +660,6 @@ span.navbar-brand img {
   color: #555;
   box-shadow: 0 4px 12px rgba(12, 31, 59, 0.2);
 }
-
 /* Ripple effect */
 .split-button::after {
   content: "";

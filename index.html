@@ -392,166 +392,211 @@
             </div>
           </div>
           <div class="row">
-             <div class="col-md-12">
-              <div class="preview-card">
-                <div class="preview-card__wrp">
-                  <div class="preview-card__item">
-                    <div class="preview-card__img">
-                      <img src="assets/img/cpal.png" alt="Close Protection and Logistics">
-                    </div>
-                    <div class="preview-card__content">
-                      <div class="preview-card__title">Close Protection And Logistics</div>
-                      <div class="preview-card__text">Close Protection And Logistics offers top-tier security and transportation solutions tailored for high-risk environments. Our expert team ensures the personal safety of clients through discreet and professional close protection services, while our logistics division provides reliable and efficient transport coordination for secure movements across any region.</div>
-                      <div class="mb-3">
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">HTML5</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">CSS3</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">JavaScript</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">Tailwind</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">React Js</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">Next Js</span>
-                      </div>
-                      <a href="https://security-and-transportation.vercel.app/" target="_blank" class="preview-card__button">Visit</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="col-md-12">
-              <div class="preview-card">
-                <div class="preview-card__wrp">
-                  <div class="preview-card__item">
-                    <div class="preview-card__img">
-                      <img src="assets/img/TRIMIX.png" alt="Trimix">
-                    </div>
-                    <div class="preview-card__content">
-                      <div class="preview-card__title">Trimix - Where Style Meets You</div>
-                      <div class="preview-card__text"> At Trimix, we blend innovation with fashion to create personalized style experiences. Whether you're exploring the latest trends or defining your unique look, Trimix is your destination for bold, expressive, and effortless style.</div>
-                       <div class="mb-3">
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">HTML5</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">CSS3</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">JavaScript</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">Bootstrap 5</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">jQuery</span>
-                      </div>
-                      <a href="https://trimix.vercel.app/" target="_blank" class="preview-card__button">Visit</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div id="project-filter-buttons" class="d-flex flex-wrap justify-content-center mb-5"></div>
+              <div id="project-projects-grid" class="row"></div>
             </div>
-            <div class="col-md-12">
-              <div class="preview-card">
-                <div class="preview-card__wrp">
-                  <div class="preview-card__item">
-                    <div class="preview-card__img">
-                      <img src="assets/img/allyzent.png" alt="Allyzent">
-                    </div>
-                    <div class="preview-card__content">
-                      <div class="preview-card__title">Allyzent - Conversational AI Health Care</div>
-                      <div class="preview-card__text">At Allyzent, we redefine healthcare through cutting-edge Conversational AI solutions. Our commitment to excellence transforms patient interactions, enhances care delivery, and empowers healthcare providers to thrive in a rapidly evolving digital ecosystem.</div>
-                       <div class="mb-3">
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">HTML5</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">CSS3</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">JavaScript</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">Bootstrap 5</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">Js Animations</span>
+  
+            <script>
+              const projects = [
+                {
+                  id: '7',
+                  title: 'Luke’s Consultancy',
+                  category: 'Web Development',
+                  image: "assets/img/luke.png",
+                  video: 'assets/img/luke.png',
+                  links: {
+                    live: 'https://stlukesconsultancy.com/'
+                  },
+                  progress: 'Completed'
+                },
+                {
+                  id: '6',
+                  title: 'Velofy',
+                  category: 'React.js',
+                  image: "assets/img/velofy.png",
+                  video: 'assets/img/velofy.png',
+                  links: {
+                    live: 'https://velofy-five.vercel.app/'
+                  },
+                  progress: 'Completed'
+                },
+                {
+                  id: '1',
+                  title: 'Close Protection',
+                  category: 'Next.js',
+                  image: "assets/img/cpal.png",
+                  video: 'assets/img/cpal.png',
+                  links: {
+                    live: 'https://security-and-transportation.vercel.app/'
+                  },
+                  progress: 'Completed'
+                },
+                {
+                  id: '2',
+                  title: "Trimix",
+                  category: 'Web Development',
+                  image: 'assets/img/TRIMIX.png',
+                  video: 'assets/img/TRIMIX.png',
+                  links: {
+                    live: 'https://trimix.vercel.app/'
+                  },
+                  progress: 'Completed'
+                },
+                {
+                  id: '3',
+                  title: 'Allyzent',
+                  category: 'Web Development',
+                  image: 'assets/img/allyzent.png',
+                  video: 'assets/img/allyzent.png',
+                  links: {
+                    live: 'https://allyzent.vercel.app/'
+                  },
+                  progress: 'Completed'
+                },
+                {
+                  id: '4',
+                  title: 'Synquix',
+                  category: 'Web Development',
+                  image: 'assets/img/synquix.png',
+                  video: 'assets/img/synquix.png',
+                  links: {
+                    live: 'https://synquix.com/'
+                  },
+                  progress: 'Completed'
+                },
+                {
+                  id: '5',
+                  title: 'TechNova',
+                  category: 'Web Development',
+                  image: 'assets/img/Nova.png',
+                  video: 'assets/img/Nova.png',
+                  links: {
+                    live: 'https://tech-nova-alpha.vercel.app/'
+                  },
+                  progress: 'Completed'
+                },
+                {
+                  id: '6',
+                  title: 'Solid',
+                  category: 'React.js',
+                  image: 'assets/img/Nova2.png',
+                  video: 'assets/img/Nova2.png',
+                  links: {
+                    live: 'https://solidwebsite.vercel.app/'
+                  },
+                  progress: 'Completed'
+                },
+                {
+                  id: '7',
+                  title: 'AutoElegance',
+                  category: 'Web Development',
+                  image: 'assets/img/Nova3.png',
+                  video: 'assets/img/Nova3.png',
+                  links: {
+                    live: 'https://auto-elegenace.vercel.app/'
+                  },
+                  progress: 'Completed'
+                }
+              ];
+
+              const categories = ['All', 'Web Development', 'React.js', 'Next.js'];
+              let selectedCategory = 'All';
+
+              const projectFilterButtons = document.getElementById('project-filter-buttons');
+              const projectProjectsGrid = document.getElementById('project-projects-grid');
+
+              // Create filter buttons
+              categories.forEach(category => {
+                const button = document.createElement('button');
+                button.innerText = category;
+                button.className = selectedCategory === category 
+                  ? 'project-filter-btn active' 
+                  : 'project-filter-btn';
+                button.onclick = () => {
+                  selectedCategory = category;
+                  updateUI();
+                };
+                projectFilterButtons.appendChild(button);
+              });
+
+              function updateUI() {
+                // Update button styles
+                [...projectFilterButtons.children].forEach(button => {
+                  button.className = button.innerText === selectedCategory
+                    ? 'project-filter-btn active'
+                    : 'project-filter-btn';
+                });
+
+                // Filter projects
+                const filteredProjects = projects.filter(project => 
+                  selectedCategory === 'All' || project.category === selectedCategory
+                );
+
+                // Add transition effect
+                projectProjectsGrid.style.opacity = 0;
+                projectProjectsGrid.style.transition = 'opacity 0.5s ease';
+                
+                setTimeout(() => {
+                  projectProjectsGrid.innerHTML = '';
+                  
+                  filteredProjects.forEach(project => {
+                    const projectDiv = document.createElement('div');
+                    projectDiv.className = 'col-md-6';
+                    projectDiv.style.transition = 'all 0.5s ease';
+                    
+                    projectDiv.innerHTML = `
+                      <div class="project-card">
+                        <div class="project-media-wrapper">
+                          <img src="${project.image}" alt="${project.title}" class="project-image" />
+                          <video src="${project.video}" autoplay muted loop class="project-video"></video>
+                          <div class="project-blur-overlay"></div>
+                        </div>
+                        <div class="project-overlay"></div>
+                        <div class="project-content">
+                          <span class="project-progress">${project.progress}</span>
+                          <h3 class="project-title">${project.title}</h3>
+                          <div class="project-links">
+                            <a href="${project.links.live}" target="_blank" class="project-btn">
+                              <i class="fas fa-external-link-alt"></i>
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                      <a href="https://allyzent.vercel.app/" target="_blank" class="preview-card__button">Visit</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="preview-card">
-                <div class="preview-card__wrp">
-                  <div class="preview-card__item">
-                    <div class="preview-card__img">
-                      <img src="assets/img/synquix.png" alt="Synquix">
-                    </div>
-                    <div class="preview-card__content">
-                      <div class="preview-card__title">Synquix - Innovation Defines Excellence</div>
-                      <div class="preview-card__text">At Synquix, we push the boundaries of technology to deliver innovative solutions that redefine success. Our commitment to excellence drives us to transform ideas into impactful realities, empowering businesses to thrive in a dynamic digital world.</div>
-                      <div class="mb-3">
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">HTML5</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">CSS3</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">JavaScript</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">Bootstrap 5</span>
-                      </div>
-                      <a href="https://synquix.com/" target="_blank" class="preview-card__button">Visit</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="preview-card">
-                <div class="preview-card__wrp">
-                  <div class="preview-card__item">
-                    <div class="preview-card__img">
-                      <img src="assets/img/Nova.png" alt="Synquix">
-                    </div>
-                    <div class="preview-card__content">
-                      <div class="preview-card__title">TechNova - Shaping with Innovation</div>
-                      <div class="preview-card__text">At TechNova, we blend cutting-edge technology with visionary thinking to create solutions that drive progress. Our passion for innovation empowers businesses to thrive in an ever-evolving digital landscape, making tomorrow's possibilities a reality today.</div>
-                      <div class="mb-3">
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">HTML5</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">CSS3</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">JavaScript</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">Bootstrap 5</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">jQuery</span>
-                      </div>
-                      <a href="https://tech-nova-alpha.vercel.app/" target="_blank" class="preview-card__button">Visit</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="preview-card">
-                <div class="preview-card__wrp">
-                  <div class="preview-card__item">
-                    <div class="preview-card__img">
-                      <img src="assets/img/Nova2.png" alt="Synquix">
-                    </div>
-                    <div class="preview-card__content">
-                      <div class="preview-card__title">Solid - Build Digital Experiences with React</div>
-                      <div class="preview-card__text">At Solid, we leverage the power of React to create dynamic, high-performance web applications that deliver seamless user experiences. With a focus on speed, scalability, and maintainability, we provide innovative solutions that are both cutting-edge and reliable. Whether you're building from scratch or enhancing existing projects, Solid ensures your React apps stand strong in today's fast-evolving digital landscape.</div>
-                      <div class="mb-3">
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">HTML5</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">CSS3</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">JavaScript</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">Bootstrap 5</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">React Js</span>
-                      </div>
-                      <a href="https://solidwebsite.vercel.app/" target="_blank" class="preview-card__button">Visit</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="preview-card">
-                <div class="preview-card__wrp">
-                  <div class="preview-card__item">
-                    <div class="preview-card__img">
-                      <img src="assets/img/Nova3.png" alt="Synquix">
-                    </div>
-                    <div class="preview-card__content">
-                      <div class="preview-card__title">AutoElegance - Automotive Excellence</div>
-                      <div class="preview-card__text">At AutoElegance, we combine advanced technology with sleek design to deliver unparalleled automotive solutions. Whether you're looking to optimize performance, enhance aesthetics, or integrate innovative features, AutoElegance ensures every vehicle embodies sophistication and precision. Drive into the future with a blend of elegance and cutting-edge innovation.</div>
-                      <div class="mb-3">
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">HTML5</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">CSS3</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">JavaScript</span>
-                        <span class="btn btn-sm btn-outline-secondary me-1 mb-1">Bootstrap 5</span>
-                      </div>
-                      <a href="https://auto-elegenace.vercel.app/" target="_blank" class="preview-card__button">Visit</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                    `;
+                    
+                    // Add hover events
+                    const card = projectDiv.querySelector('.project-card');
+                    const video = projectDiv.querySelector('.project-video');
+                    const img = projectDiv.querySelector('.project-image');
+                    
+                    card.addEventListener('mouseenter', () => {
+                      if (video) {
+                        img.style.opacity = 0.3; // Keep image visible but dimmed
+                        video.style.opacity = 1;
+                        video.play().catch(e => console.log('Video play error:', e));
+                      }
+                    });
+                    
+                    card.addEventListener('mouseleave', () => {
+                      if (video) {
+                        img.style.opacity = 1;
+                        video.style.opacity = 0;
+                        video.pause();
+                        video.currentTime = 0;
+                      }
+                    });
+                    
+                    projectProjectsGrid.appendChild(projectDiv);
+                  });
+                  
+                  projectProjectsGrid.style.opacity = 1;
+                }, 300);
+              }
+
+              // Initial UI setup
+              updateUI();
+            </script>
           </div>
         </div>
       </div>

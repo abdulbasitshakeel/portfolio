@@ -859,147 +859,227 @@ span.navbar-brand img {
 /*======================================
 //--//-->   Project Work
 ======================================*/
-.preview-card {
-  position: relative;
-  margin: 15px;
-  background: rgb(39, 40, 41) !important;
-  box-shadow: 0 0.125rem 1.25rem rgb(33 29 29) !important;
-  padding: 30px;
-  border-radius: 20px;
+.project-filter-btn {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
   transition: all 0.3s;
-  overflow: hidden;
+  margin: 0.2rem;
 }
 
-.preview-card__wrp {
+.project-filter-btn.active {
+  background-color: white;
+  color: black;
+}
+
+.project-filter-btn:not(.active) {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-filter-btn:not(.active):hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: #181818;
+  border: 2px solid rgba(51, 50, 50, 0.559);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 350px;
+  margin-bottom: 1.5rem;
+}
+
+.project-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-media-wrapper {
+  position: relative;
   width: 100%;
   height: 100%;
-}
-
-.preview-card__item {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.preview-card__img {
-  width: 300px;
-  flex-shrink: 0;
-  /* height: 300px;
-  box-shadow: 4px 13px 30px 1px rgba(69, 201, 253, 0.2); */
-  border-radius: 20px;
   overflow: hidden;
-  margin-right: 30px;
 }
 
-.preview-card__img img {
+.project-image {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-  transition: all 0.3s;
+  transition: opacity 0.3s ease, transform 0.4s ease;
 }
 
-.preview-card__content {
-  flex: 1;
-  min-width: 300px;
-  padding: 20px 0;
+.project-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
-.preview-card__title {
-  font-size: 28px;
-  font-weight: 700;
+.project-card:hover .project-video {
+  opacity: 1;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  transition: opacity 0.3s ease;
+}
+
+.project-content {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+}
+
+.project-card:hover .project-content {
+  transform: translateY(10px);
+}
+
+.project-title {
+  font-size: 65px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.493);
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-description {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-title,
+.project-card:hover .project-description {
+  opacity: 0;
+}
+
+.project-progress {
+  position: absolute;
+  right: 15px;
+  top: 15px;
   color: white;
-  margin-bottom: 10px;
+  border: 1px solid rgb(45, 45, 45);
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: rgb(45, 45, 45);
+  font-size: 12px;
 }
 
-.preview-card__text {
+.project-links {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 0.5rem;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Remove the hover effect that hides the links */
+.project-card:hover .project-links {
+  opacity: 1 !important;
+}
+
+.project-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 10px;
+  background-color: #181717;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.project-btn:hover {
+  background-color: transparent;
+  outline: 1px white solid;
+  outline-offset: -1px;
+}
+
+.project-btn i {
   color: white;
-  margin-bottom: 15px;
-  line-height: 1.6;
+  font-size: 1em;
+  transition: color 0.4s;
 }
 
-.preview-card__button {
-  display: inline-block;
-  background: white;
-  padding: 8px 30px;
-  border-radius: 50px;
-  color: black;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s;
-  background-size: 200% auto;
+.project-blur-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.19);
+  backdrop-filter: blur(8px);
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  pointer-events: none;
 }
 
-.preview-card__button:hover {
-  color: black;
-  background-color: whitesmoke;
+.project-card:hover .project-blur-overlay {
+  opacity: 0;
 }
 
-.preview-card__code {
-  color: #7b7992;
-  margin-bottom: 15px;
-  display: block;
-  font-weight: 500;
+.project-technologies {
+  margin-bottom: 1rem;
+  transition: opacity 0.3s ease;
 }
 
-/* Responsive adjustments */
+.project-card:hover .project-technologies {
+  opacity: 0;
+}
+
 @media (max-width: 992px) {
-  .preview-card__img {
-    width: 250px;
-    height: 250px;
-    margin-right: 20px;
+  .project-title {
+      font-size: 3rem;
   }
 }
 
 @media (max-width: 768px) {
-  .preview-card__item {
-    flex-direction: column;
+    .project-title {
+      font-size: 50px;
   }
   
-  .preview-card__img {
-    width: 100%;
-    max-width: 400px;
-    height: 250px;
-    margin-right: 0;
-    margin-bottom: 30px;
-  }
-  
-  .preview-card__content {
-    padding: 0;
-    text-align: center;
+  .project-card {
+      height: 300px;
   }
 }
 
 @media (max-width: 576px) {
-  .preview-card {
-      padding: 10px;
-      margin-bottom: 20px;
-      margin-top: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
+  .project-title {
+      font-size: 42px;
   }
   
-  .preview-card__title {
-    font-size: 20px;
+  .project-card {
+      height: 250px;
   }
-  
-  .preview-card__button {
-    width: 100%;
-    text-align: center;
-  }
-  .preview-card__content {
-    flex: 1;
-    min-width: 0px;
-    padding: 20px 0;
-}
-.card {
-  margin: 11px;
-}
-
-.card-just-text {
-  padding: 0px;
-  text-align: center;
-}
 }
 
 /*btn back to work*/

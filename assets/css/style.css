@@ -600,9 +600,9 @@ span.navbar-brand img {
 }
 .about-img img {
   border-radius: 50%;
-  margin-top: 10%;
-  width: 270px; 
-  height: 270px;
+  margin-top: 11%;
+  width: 280px;
+  height: 280px;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

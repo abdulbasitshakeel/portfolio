@@ -73,13 +73,6 @@ $(document).ready(function() {
     
     const myProjects = [
         {
-            title: 'Luke’s Consultancy',
-            category: 'Web Development',
-            image: "assets/img/luke.png",
-            description: 'A professional consultancy website built from the ground up.',
-            liveLink: 'https://stlukesconsultancy.com/'
-        },
-        {
             title: 'Velofy',
             category: 'React.js',
             image: "assets/img/velofy.png",
@@ -99,6 +92,13 @@ $(document).ready(function() {
             image: 'assets/img/TRIMIX.png',
             description: 'A responsive and performant website for a business client.',
             liveLink: 'https://trimix.vercel.app/'
+        },
+        {
+            title: 'Nippon International Trading Motors',
+            category: 'Web Development',
+            image: 'assets/img/nippon.png',
+            description: 'A modern, optimized business site crafted for performance and professional appeal.',
+            liveLink: 'https://nippon-international-trading-motors.vercel.app/'
         },
         {
             title: 'Allyzent',
@@ -122,11 +122,25 @@ $(document).ready(function() {
             liveLink: 'https://tech-nova-alpha.vercel.app/'
         },
         {
+            title: 'Leads Management Dashboard',
+            category: 'CRM',
+            image: 'assets/img/leads-management-crm.png',
+            description: 'An elegant and High Performing CRM built to enhance the client’s Business.',
+            liveLink: 'https://master-lead-dashboard.vercel.app/'
+        },
+        {
             title: 'Solid',
             category: 'React.js',
             image: 'assets/img/Nova2.png',
             description: 'An interactive web application demonstrating modern UI/UX principles with React.',
             liveLink: 'https://solidwebsite.vercel.app/'
+        },
+        {
+            title: 'Salary Calculator',
+            category: 'React.js',
+            image: 'assets/img/salary-calculator.png',
+            description: 'An interactive salary calculator built with React, showcasing clean design and smooth user experience.',
+            liveLink: 'https://react-salary-calculator.vercel.app/'
         },
         {
             title: 'AutoElegance',

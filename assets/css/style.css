@@ -512,9 +512,9 @@ body::-webkit-scrollbar {
 
 @media (max-width: 768px) {
     .tab-indicator {
-        position: absolute;
-        top: 4px;
-        height: calc(35% - 8px) !important;
+        /* position: absolute;
+        top: 4px; */
+        height: calc(50% - 8px) !important;
     }
     .sidebar-card {
         max-width: 1000px;
@@ -537,10 +537,10 @@ body::-webkit-scrollbar {
     }
 
     a.w-full.text-center.py-3.rounded-xl.font-semibold.text-white.transition-all.shadow-lg.hover\:shadow-xl {
-        font-size: 20px;
+        font-size: 18px;
     }
     a.w-full.text-center.py-3.rounded-xl.font-semibold.border-2.border-\[var\(--accent\)\].text-\[var\(--accent\)\].hover\:bg-\[var\(--accent\)\].hover\:text-white.transition-all {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .tabs-card {

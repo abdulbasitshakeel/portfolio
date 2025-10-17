@@ -630,6 +630,6 @@ body::-webkit-scrollbar {
     height: 1.25rem;
 }
     .tab-indicator {
-        height: calc(50% - 8px) !important;
+        height: calc(35% - 8px) !important;
     }
 }

@@ -693,10 +693,11 @@ button:focus-visible {
     gap: 0.5rem;
   }
 
-  .nav-link {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-  }
+    .nav-link {
+        padding: 10px 10px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
 }
 
 /* ✅ MOBILE (<=768px) */
@@ -729,8 +730,9 @@ button:focus-visible {
     padding: 0.5rem;
   }
 
-  .nav-link {
-    padding: 0.5rem 0.8rem;
-    font-size: 0.8rem;
-  }
+    .nav-link {
+        padding: 10px 10px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
 }

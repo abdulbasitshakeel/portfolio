@@ -539,7 +539,7 @@ body::-webkit-scrollbar {
 
 @media (min-width:1400px) {
     .sidebar-card {
-        padding: 2.5rem 2rem;
+        padding: 30px 2rem;
     }
     h1.text-3xl.font-bold.mb-4.mt-4.text-center {
         margin-top: 2rem;

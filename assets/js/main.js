@@ -129,6 +129,13 @@ $(document).ready(function() {
             liveLink: 'https://master-lead-dashboard.vercel.app/'
         },
         {
+            title: 'Sample Management Dashboard',
+            category: 'Next.js',
+            image: 'assets/img/sample-management-crm.png',
+            description: 'A powerful and elegant CRM designed to streamline operations and elevate business performance.',
+            liveLink: 'https://sample-dashboard-alpha-eight.vercel.app/'
+        },
+        {
             title: 'Solid',
             category: 'React.js',
             image: 'assets/img/Nova2.png',

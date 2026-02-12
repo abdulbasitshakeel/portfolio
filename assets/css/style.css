@@ -162,7 +162,7 @@ body::-webkit-scrollbar {
 }
 
 .avatar-container {
-    border-color: var(--accent);
+    /* border-color: var(--accent); */
     animation: pulse-border 2.5s infinite;
 }
 

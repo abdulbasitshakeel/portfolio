@@ -11,38 +11,45 @@ function AnimatedSphere() {
 
   useFrame(() => {
     if (meshRef.current) {
-      meshRef.current.rotation.x += 0.0003
-      meshRef.current.rotation.y += 0.0005
+      meshRef.current.rotation.x += 0.0002
+      meshRef.current.rotation.y += 0.0004
     }
   })
 
   return (
     <group position={[0, 0, 0]}>
-      <Sphere args={[2, 64, 64]} ref={meshRef} scale={1}>
+      <Sphere args={[2.2, 64, 64]} ref={meshRef} scale={1}>
         <MeshDistortMaterial
-          color="#333366"
-          distort={0.4}
-          speed={2}
-          roughness={0.4}
-          metalness={0.6}
+          color="#6b5aaa"
+          distort={0.3}
+          speed={1.5}
+          roughness={0.5}
+          metalness={0.5}
         />
       </Sphere>
       
       {/* Ambient light for soft illumination */}
-      <ambientLight intensity={0.5} color="#ffffff" />
+      <ambientLight intensity={0.6} color="#ffffff" />
       
-      {/* Directional light for modeling */}
+      {/* Directional light with warm tone */}
       <directionalLight
         position={[5, 5, 5]}
-        intensity={1}
-        color="#6666CC"
+        intensity={0.8}
+        color="#e8e2f5"
       />
       
       {/* Point light for accent */}
       <pointLight
         position={[-5, -5, 5]}
-        intensity={0.5}
-        color="#E8E8F5"
+        intensity={0.6}
+        color="#4a3f7f"
+      />
+      
+      {/* Fill light */}
+      <pointLight
+        position={[0, -5, -3]}
+        intensity={0.4}
+        color="#a8a0c8"
       />
     </group>
   )
@@ -88,11 +95,11 @@ function ParticleField() {
     <points ref={particlesRef}>
       <bufferGeometry ref={geometryRef} />
       <pointsMaterial
-        size={0.15}
-        color="#6666CC"
+        size={0.12}
+        color="#4a3f7f"
         sizeAttenuation={true}
         transparent={true}
-        opacity={0.8}
+        opacity={0.6}
       />
     </points>
   )
@@ -100,7 +107,10 @@ function ParticleField() {
 
 export function HeroScene() {
   return (
-    <div className="w-full h-screen relative bg-gradient-to-b from-slate-900 via-slate-800 to-blue-900">
+    <div className="w-full h-screen relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #faf8f5 0%, #f0ebe5 50%, #e8e2f5 100%)' }}>
+      {/* Subtle background overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent pointer-events-none" />
+      
       <Canvas
         camera={{ position: [0, 0, 5], fov: 75 }}
         className="w-full h-full"
@@ -113,31 +123,33 @@ export function HeroScene() {
           enableZoom={false}
           enablePan={false}
           autoRotate
-          autoRotateSpeed={4}
+          autoRotateSpeed={2}
         />
       </Canvas>
 
       {/* Overlay content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-        <div className="text-center space-y-6">
-          <h1 className="text-6xl md:text-8xl font-bold text-white drop-shadow-lg">
-            Abdul Basit
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-200 font-light tracking-widest drop-shadow">
-            FRONTEND DEVELOPER
-          </p>
-          <div className="h-1 w-16 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full" />
-          <p className="text-gray-300 max-w-md mx-auto text-lg drop-shadow">
-            Crafting Engaging User Interfaces and Seamless Web Experiences
+      <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none px-4">
+        <div className="text-center space-y-8 max-w-2xl">
+          <div className="space-y-3">
+            <h1 style={{ fontFamily: "'Playfair Display', serif" }} className="text-6xl md:text-7xl lg:text-8xl font-bold" style={{ color: '#1a1816', letterSpacing: '-0.5px' }}>
+              Abdul Basit
+            </h1>
+            <p className="text-base md:text-lg font-medium tracking-widest uppercase" style={{ color: '#6b6860', letterSpacing: '2px' }}>
+              Frontend Developer
+            </p>
+          </div>
+          <div className="w-12 h-1 mx-auto rounded-full bg-gradient-to-r from-accent to-purple-400" />
+          <p className="text-sm md:text-base leading-relaxed" style={{ color: '#6b6860', maxWidth: '500px' }}>
+            Designing and building beautiful, interactive web experiences with modern technologies and creative problem-solving
           </p>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 pointer-events-none">
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 pointer-events-none">
         <div className="animate-bounce">
           <svg
-            className="w-6 h-6 text-blue-400"
+            className="w-6 h-6" style={{ color: '#4a3f7f' }}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

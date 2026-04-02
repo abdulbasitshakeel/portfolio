@@ -26,32 +26,30 @@ export function Services() {
   const { services } = portfolioData
 
   return (
-    <div className="space-y-8 animate-fadeInUp">
+    <div className="space-y-12">
       <div>
-        <h2 className="text-4xl font-extrabold mb-2 bg-gradient-to-r from-accent to-blue-600 bg-clip-text text-transparent">
+        <h2 style={{ fontFamily: "'Playfair Display', serif" }} className="text-4xl md:text-5xl font-bold mb-4 text-text-primary">
           My Services
         </h2>
-        <div className="w-16 h-1 bg-accent-gradient rounded-full mt-4 mb-10" />
+        <div className="w-12 h-1 bg-gradient-to-r from-accent to-purple-400 rounded-full" />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {services.map((service, index) => (
           <AnimatedCard
             key={index}
             index={index}
-            className="flex items-start space-x-4 bg-white p-6 border-l-4 border-accent"
+            className="flex flex-col p-6 rounded-lg border border-accent/10 bg-white/50 hover:bg-white/80"
           >
-            <div className="text-accent flex-shrink-0">
+            <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/20 to-purple-200/20 flex items-center justify-center mb-4 text-accent">
               {iconMap[service.icon] || null}
             </div>
-            <div>
-              <h4 className="text-xl font-bold text-text-primary mb-2">
-                {service.title}
-              </h4>
-              <p className="text-text-secondary">
-                {service.description}
-              </p>
-            </div>
+            <h4 className="text-lg font-semibold text-text-primary mb-3">
+              {service.title}
+            </h4>
+            <p className="text-sm text-text-secondary leading-relaxed flex-grow">
+              {service.description}
+            </p>
           </AnimatedCard>
         ))}
       </div>

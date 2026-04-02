@@ -42,16 +42,16 @@ export default function Home() {
       </section>
 
       {/* Portfolio Section */}
-      <section className="w-full py-12 md:py-16 px-4 md:px-8 lg:px-12 bg-bg-primary">
+      <section className="w-full py-16 md:py-24 px-4 md:px-8 lg:px-12 bg-bg-primary">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-6 lg:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-8 lg:gap-16">
             {/* Sidebar */}
-            <div className="hidden lg:flex">
+            <div className="hidden lg:block">
               <Sidebar />
             </div>
 
             {/* Main Content */}
-            <div className="flex flex-col space-y-6 md:space-y-8 animate-slideInRight">
+            <div className="flex flex-col space-y-8">
               {/* Mobile Sidebar - Show on mobile only */}
               <div className="lg:hidden w-full">
                 <Sidebar />
@@ -61,14 +61,14 @@ export default function Home() {
               <Navigation activeTab={activeTab} onTabChange={setActiveTab} />
 
               {/* Content Area */}
-              <div className="glass-card rounded-2xl p-6 md:p-8 lg:p-12 w-full">
+              <div className="glass-card rounded-2xl p-8 md:p-10 lg:p-14 w-full">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={activeTab}
-                    initial={{ opacity: 0, y: 10 }}
+                    initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    transition={{ duration: 0.3 }}
+                    exit={{ opacity: 0, y: -15 }}
+                    transition={{ duration: 0.35, ease: "easeOut" }}
                   >
                     {renderContent()}
                   </motion.div>

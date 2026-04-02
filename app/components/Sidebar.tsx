@@ -26,9 +26,9 @@ export function Sidebar() {
   return (
     <aside className="sticky top-8 w-full lg:w-80 glass-card rounded-2xl p-6 md:p-8 flex flex-col items-center text-center h-fit animate-slideInLeft">
       {/* Profile Image */}
-      <div className="w-48 h-48 rounded-full overflow-hidden mb-1 border-4 border-accent shadow-xl animate-pulse-border mb-4">
+      <div className="w-48 h-48 rounded-full overflow-hidden mb-4 border-4 border-accent shadow-xl animate-pulse-border">
         <img
-          src="/assets/img/profile.png"
+          src="/profile.jpg"
           alt="Abdul Basit Shakeel Professional Photo"
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
         />

@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import "./globals.css"
-import { CustomCursor } from "@/app/components/CustomCursor"
 import { ScrollToTop } from "@/app/components/ScrollToTop"
 
 export const metadata: Metadata = {
@@ -50,8 +49,7 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.png" />
       </head>
-      <body className="bg-bg-primary text-text-primary antialiased cursor-none">
-        <CustomCursor />
+      <body className="bg-bg-primary text-text-primary antialiased">
         <ScrollToTop />
         {children}
       </body>

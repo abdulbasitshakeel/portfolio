@@ -100,10 +100,11 @@ function ParticleField() {
 
 export function HeroScene() {
   return (
-    <div className="w-full h-screen relative bg-gradient-to-b from-bg-primary via-bg-primary to-accent-light">
+    <div className="w-full h-screen relative bg-gradient-to-b from-slate-900 via-slate-800 to-blue-900">
       <Canvas
         camera={{ position: [0, 0, 5], fov: 75 }}
         className="w-full h-full"
+        style={{ display: 'block' }}
       >
         <PerspectiveCamera makeDefault position={[0, 0, 5]} fov={75} />
         <AnimatedSphere />
@@ -118,15 +119,15 @@ export function HeroScene() {
 
       {/* Overlay content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-        <div className="text-center space-y-6 animate-fadeInUp">
-          <h1 className="text-6xl md:text-8xl font-bold text-text-primary">
+        <div className="text-center space-y-6">
+          <h1 className="text-6xl md:text-8xl font-bold text-white drop-shadow-lg">
             Abdul Basit
           </h1>
-          <p className="text-xl md:text-2xl text-text-secondary font-light tracking-widest">
+          <p className="text-xl md:text-2xl text-gray-200 font-light tracking-widest drop-shadow">
             FRONTEND DEVELOPER
           </p>
-          <div className="h-1 w-16 bg-accent-gradient mx-auto rounded-full" />
-          <p className="text-text-secondary max-w-md mx-auto text-lg">
+          <div className="h-1 w-16 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full" />
+          <p className="text-gray-300 max-w-md mx-auto text-lg drop-shadow">
             Crafting Engaging User Interfaces and Seamless Web Experiences
           </p>
         </div>
@@ -136,7 +137,7 @@ export function HeroScene() {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 pointer-events-none">
         <div className="animate-bounce">
           <svg
-            className="w-6 h-6 text-accent"
+            className="w-6 h-6 text-blue-400"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

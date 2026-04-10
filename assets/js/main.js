@@ -1,6 +1,121 @@
 $(document).ready(function() {
     lucide.createIcons();
 
+    const root = document.documentElement;
+    const $themeToggle = $('#theme-toggle');
+    const supportsCustomCursor = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+    if (supportsCustomCursor) {
+        const body = document.body;
+        const dot = document.querySelector('.cursor-dot');
+        const ring = document.querySelector('.cursor-ring');
+        let dotX = 0;
+        let dotY = 0;
+        let ringX = 0;
+        let ringY = 0;
+        let mouseX = 0;
+        let mouseY = 0;
+        let hasMouseMoved = false;
+
+        const renderCursor = () => {
+            if (hasMouseMoved) {
+                dotX += (mouseX - dotX) * 0.45;
+                dotY += (mouseY - dotY) * 0.45;
+                ringX += (mouseX - ringX) * 0.16;
+                ringY += (mouseY - ringY) * 0.16;
+
+                dot.style.transform = `translate3d(${dotX}px, ${dotY}px, 0) translate(-50%, -50%)`;
+                ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate(-50%, -50%)`;
+            }
+
+            requestAnimationFrame(renderCursor);
+        };
+
+        document.addEventListener('mousemove', (event) => {
+            mouseX = event.clientX;
+            mouseY = event.clientY;
+            if (!hasMouseMoved) {
+                dotX = ringX = mouseX;
+                dotY = ringY = mouseY;
+                hasMouseMoved = true;
+            }
+            body.classList.add('cursor-active');
+        });
+
+        document.addEventListener('mouseleave', () => {
+            body.classList.remove('cursor-active', 'cursor-hover');
+        });
+
+        document.querySelectorAll('a, button, .nav-link, .project-link, .project-filter-btn, .journey-filter-btn, .theme-toggle, .social-link').forEach((element) => {
+            element.addEventListener('mouseenter', () => body.classList.add('cursor-hover'));
+            element.addEventListener('mouseleave', () => body.classList.remove('cursor-hover'));
+        });
+
+        renderCursor();
+    }
+
+    function initParticles(theme) {
+        if (window.pJSDom && window.pJSDom.length) {
+            window.pJSDom.forEach(instance => {
+                instance.pJS.fn.vendors.destroypJS();
+            });
+            window.pJSDom = [];
+            $('#particles-js').empty();
+        }
+
+        const isDark = theme === 'dark';
+
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": isDark ? "#8b8bff" : "#333366" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": isDark ? 0.55 : 0.4, "random": false },
+                "size": { "value": isDark ? 3.4 : 3, "random": true },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": isDark ? "#8b8bff" : "#666699",
+                    "opacity": isDark ? 0.22 : 0.3,
+                    "width": 1
+                },
+                "move": { "enable": true, "speed": 3, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "repulse" },
+                    "onclick": { "enable": true, "mode": "push" },
+                    "resize": true
+                },
+                "modes": {
+                    "repulse": { "distance": 100, "duration": 0.4 },
+                    "push": { "particles_nb": 4 }
+                }
+            },
+            "retina_detect": true
+        });
+    }
+
+    function applyTheme(theme, persist = true) {
+        const isDark = theme === 'dark';
+        root.setAttribute('data-theme', theme);
+        $themeToggle.attr('aria-pressed', String(isDark));
+        $themeToggle.attr('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+        initParticles(theme);
+
+        if (persist) {
+            localStorage.setItem('portfolio-theme', theme);
+        }
+    }
+
+    applyTheme(root.getAttribute('data-theme') || 'light', false);
+
+    $themeToggle.on('click', function() {
+        const nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        applyTheme(nextTheme);
+    });
+
     function moveIndicator($activeLink) {
         const $indicator = $('#tab-indicator');
         if($activeLink.length === 0) return;
@@ -33,8 +148,8 @@ $(document).ready(function() {
         $('.nav-link.active').removeClass('active');
         $this.addClass('active');
         moveIndicator($this);
-        $('.tab-content:visible').fadeOut(250, function() {
-            $(targetContentId).fadeIn(250, function() {
+        $('.tab-content:visible').stop(true, true).fadeOut(180, function() {
+            $(targetContentId).stop(true, true).fadeIn(220, function() {
                 if(targetContentId === '#skills-content') {
                     $('.skill-progress-fill').each(function() {
                         $(this).css('width', $(this).data('progress'));
@@ -43,19 +158,25 @@ $(document).ready(function() {
             });
         });
     });
-    let resizeTimer;
-    $(window).on('resize', function() {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function() {
-            const $activeLink = $('.nav-link.active');
-            if($activeLink.length) {
-                $('#tab-indicator').addClass('!transition-none');
-                moveIndicator($activeLink);
-                $('#tab-indicator')[0].offsetHeight;
-                $('#tab-indicator').removeClass('!transition-none');
-            }
-        }, 250);
+    function syncActiveTabIndicator() {
+        const $activeLink = $('.nav-link.active');
+        const $indicator = $('#tab-indicator');
+
+        if($activeLink.length === 0 || $indicator.length === 0) {
+            return;
+        }
+
+        $indicator.addClass('!transition-none');
+        moveIndicator($activeLink);
+        $indicator[0].offsetHeight;
+        $indicator.removeClass('!transition-none');
+    }
+
+    $(window).on('resize orientationchange', function() {
+        requestAnimationFrame(syncActiveTabIndicator);
     });
+
+    requestAnimationFrame(syncActiveTabIndicator);
     $('.journey-filter-btn').on('click', function() {
         const $this = $(this);
         if($this.hasClass('active')) {
@@ -64,8 +185,8 @@ $(document).ready(function() {
         const filterValue = $this.data('journey-filter');
         $('.journey-filter-btn').removeClass('active');
         $this.addClass('active');
-        $('.journey-card:visible').fadeOut(200).promise().done(function() {
-            $(`.journey-card[data-journey-content="${filterValue}"]`).fadeIn(200);
+        $('.journey-card:visible').stop(true, true).fadeOut(160).promise().done(function() {
+            $(`.journey-card[data-journey-content="${filterValue}"]`).stop(true, true).fadeIn(200);
         });
     });
 
@@ -230,9 +351,9 @@ $(document).ready(function() {
 
         const filterValue = $this.data('project-filter');
         
-        $('#projects-content .grid').fadeOut(200, function() {
+        $('#projects-content .grid').stop(true, true).fadeOut(160, function() {
             renderProjects(filterValue);
-            $(this).fadeIn(200);
+            $(this).stop(true, true).fadeIn(220);
         });
     });
 
@@ -240,29 +361,4 @@ $(document).ready(function() {
     renderProjects('all');
 
     /* --- END: DYNAMIC PROJECT SECTION CODE --- */
-
-    particlesJS("particles-js", {
-        "particles": {
-            "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
-            "color": { "value": "#333366" },
-            "shape": { "type": "circle" },
-            "opacity": { "value": 0.4, "random": false },
-            "size": { "value": 3, "random": true },
-            "line_linked": { "enable": true, "distance": 150, "color": "#666699", "opacity": 0.3, "width": 1 },
-            "move": { "enable": true, "speed": 3, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
-        },
-        "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-                "onhover": { "enable": true, "mode": "repulse" },
-                "onclick": { "enable": true, "mode": "push" },
-                "resize": true
-            },
-            "modes": {
-                "repulse": { "distance": 100, "duration": 0.4 },
-                "push": { "particles_nb": 4 }
-            }
-        },
-        "retina_detect": true
-    });
 });

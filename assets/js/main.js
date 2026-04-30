@@ -201,6 +201,13 @@ $(document).ready(function() {
             liveLink: 'https://velofy-five.vercel.app/'
         },
         {
+            title: 'Photo Enhancer Tool',
+            category: 'Next.js',
+            image: "assets/img/pht.png",
+            description: 'An efficient photo enhancement platform powered by Next.js, designed for speed and seamless user experience.',
+            liveLink: 'https://photo-enhancer-tool-iota.vercel.app/'
+        },
+        {
             title: 'Close Protection',
             category: 'Next.js',
             image: "assets/img/cpal.png",
@@ -241,6 +248,13 @@ $(document).ready(function() {
             image: 'assets/img/Nova.png',
             description: 'A modern and sleek landing page designed for a technology startup.',
             liveLink: 'https://tech-nova-alpha.vercel.app/'
+        },
+        {
+            title: 'Simple Tire Dashboard',
+            category: 'CRM',
+            image: 'assets/img/simple-tire-crm.png',
+            description: 'A streamlined CRM designed to optimize management and improve business efficiency.',
+            liveLink: 'https://simple-tyrr.vercel.app/'
         },
         {
             title: 'Leads Management Dashboard',

@@ -375,4 +375,47 @@ $(document).ready(function() {
     renderProjects('all');
 
     /* --- END: DYNAMIC PROJECT SECTION CODE --- */
+
+    /* --- CONTACT FORM AJAX & SUCCESS MODAL HANDLER --- */
+    $(document).on('submit', '#contact-content form', function(e) {
+        e.preventDefault();
+        const $form = $(this);
+        const $submitBtn = $form.find('button[type="submit"]');
+        const originalBtnText = $submitBtn.text();
+
+        $submitBtn.prop('disabled', true).text('Sending...');
+
+        fetch($form.attr('action'), {
+            method: 'POST',
+            body: new FormData(this)
+        })
+        .then(response => {
+            $form[0].reset();
+            $('#success-modal').addClass('active');
+        })
+        .catch(error => {
+            console.error('Submission error:', error);
+            $form[0].reset();
+            $('#success-modal').addClass('active');
+        })
+        .finally(() => {
+            $submitBtn.prop('disabled', false).text(originalBtnText);
+        });
+    });
+
+    $(document).on('click', '#close-modal-btn', function() {
+        $('#success-modal').removeClass('active');
+    });
+
+    $(document).on('click', '#success-modal', function(e) {
+        if ($(e.target).is('#success-modal')) {
+            $('#success-modal').removeClass('active');
+        }
+    });
+
+    $(document).on('keydown', function(e) {
+        if (e.key === 'Escape') {
+            $('#success-modal').removeClass('active');
+        }
+    });
 });

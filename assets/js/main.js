@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     lucide.createIcons();
 
     const root = document.documentElement;
@@ -111,14 +111,14 @@ $(document).ready(function() {
 
     applyTheme(root.getAttribute('data-theme') || 'light', false);
 
-    $themeToggle.on('click', function() {
+    $themeToggle.on('click', function () {
         const nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
         applyTheme(nextTheme);
     });
 
     function moveIndicator($activeLink) {
         const $indicator = $('#tab-indicator');
-        if($activeLink.length === 0) return;
+        if ($activeLink.length === 0) return;
         const newLeft = $activeLink.position().left;
         const newWidth = $activeLink.outerWidth();
         $indicator.css({
@@ -128,19 +128,19 @@ $(document).ready(function() {
     }
     const $navLinks = $('.nav-link');
     const $tabContents = $('.tab-content');
-    
+
     // Hide all tab contents except the first one.
     // Also fixes the issue of having two project tabs by hiding them correctly.
     $('#about-content').show();
     $('.tab-content').not('#about-content').hide();
 
     const $initialActive = $('.nav-link.active');
-    if($initialActive.length) {
+    if ($initialActive.length) {
         moveIndicator($initialActive);
     }
-    $navLinks.on('click', function() {
+    $navLinks.on('click', function () {
         const $this = $(this);
-        if($this.hasClass('active')) {
+        if ($this.hasClass('active')) {
             return;
         }
         const targetTab = $this.data('tab');
@@ -148,10 +148,10 @@ $(document).ready(function() {
         $('.nav-link.active').removeClass('active');
         $this.addClass('active');
         moveIndicator($this);
-        $('.tab-content:visible').stop(true, true).fadeOut(180, function() {
-            $(targetContentId).stop(true, true).fadeIn(220, function() {
-                if(targetContentId === '#skills-content') {
-                    $('.skill-progress-fill').each(function() {
+        $('.tab-content:visible').stop(true, true).fadeOut(180, function () {
+            $(targetContentId).stop(true, true).fadeIn(220, function () {
+                if (targetContentId === '#skills-content') {
+                    $('.skill-progress-fill').each(function () {
                         $(this).css('width', $(this).data('progress'));
                     });
                 }
@@ -162,7 +162,7 @@ $(document).ready(function() {
         const $activeLink = $('.nav-link.active');
         const $indicator = $('#tab-indicator');
 
-        if($activeLink.length === 0 || $indicator.length === 0) {
+        if ($activeLink.length === 0 || $indicator.length === 0) {
             return;
         }
 
@@ -172,27 +172,34 @@ $(document).ready(function() {
         $indicator.removeClass('!transition-none');
     }
 
-    $(window).on('resize orientationchange', function() {
+    $(window).on('resize orientationchange', function () {
         requestAnimationFrame(syncActiveTabIndicator);
     });
 
     requestAnimationFrame(syncActiveTabIndicator);
-    $('.journey-filter-btn').on('click', function() {
+    $('.journey-filter-btn').on('click', function () {
         const $this = $(this);
-        if($this.hasClass('active')) {
+        if ($this.hasClass('active')) {
             return;
         }
         const filterValue = $this.data('journey-filter');
         $('.journey-filter-btn').removeClass('active');
         $this.addClass('active');
-        $('.journey-card:visible').stop(true, true).fadeOut(160).promise().done(function() {
+        $('.journey-card:visible').stop(true, true).fadeOut(160).promise().done(function () {
             $(`.journey-card[data-journey-content="${filterValue}"]`).stop(true, true).fadeIn(200);
         });
     });
 
     /* --- START: DYNAMIC PROJECT SECTION CODE --- */
-    
+
     const myProjects = [
+        {
+            title: 'TypeFlow Typing Platform',
+            category: 'Next.js',
+            image: "assets/img/typeflow.png",
+            description: 'A modern typing speed test platform built with Next.js, designed to improve typing speed and accuracy through real-time performance tracking.',
+            liveLink: 'https://typeflow-application.vercel.app/'
+        },
         {
             title: 'Velofy',
             category: 'React.js',
@@ -296,18 +303,18 @@ $(document).ready(function() {
     // --- Function to display projects in the grid ---
     function renderProjects(filter = 'all') {
         const projectGrid = $('#projects-content .grid');
-        
+
         const filteredProjects = (filter === 'all')
             ? myProjects
             : myProjects.filter(p => p.category.toLowerCase().replace('.js', '').replace(/\s/g, '-') === filter);
 
-        projectGrid.empty(); 
+        projectGrid.empty();
 
         if (filteredProjects.length === 0) {
-                projectGrid.html('<p class="text-center text-[var(--text-secondary)] col-span-2">No projects found in this category.</p>');
-                return;
+            projectGrid.html('<p class="text-center text-[var(--text-secondary)] col-span-2">No projects found in this category.</p>');
+            return;
         }
-        
+
         filteredProjects.forEach(project => {
             const projectCategorySlug = project.category.toLowerCase().replace('.js', '').replace(/\s/g, '-');
             // === JAVASCRIPT FIX FOR IMAGE ===
@@ -356,7 +363,7 @@ $(document).ready(function() {
     }
 
     // --- Event listener for filter button clicks ---
-    $('#projects-content .project-filter-wrapper').on('click', '.project-filter-btn', function() {
+    $('#projects-content .project-filter-wrapper').on('click', '.project-filter-btn', function () {
         const $this = $(this);
         if ($this.hasClass('active')) return;
 
@@ -364,8 +371,8 @@ $(document).ready(function() {
         $this.addClass('active');
 
         const filterValue = $this.data('project-filter');
-        
-        $('#projects-content .grid').stop(true, true).fadeOut(160, function() {
+
+        $('#projects-content .grid').stop(true, true).fadeOut(160, function () {
             renderProjects(filterValue);
             $(this).stop(true, true).fadeIn(220);
         });
@@ -377,7 +384,7 @@ $(document).ready(function() {
     /* --- END: DYNAMIC PROJECT SECTION CODE --- */
 
     /* --- CONTACT FORM AJAX & SUCCESS MODAL HANDLER --- */
-    $(document).on('submit', '#contact-content form', function(e) {
+    $(document).on('submit', '#contact-content form', function (e) {
         e.preventDefault();
         const $form = $(this);
         const $submitBtn = $form.find('button[type="submit"]');
@@ -389,31 +396,31 @@ $(document).ready(function() {
             method: 'POST',
             body: new FormData(this)
         })
-        .then(response => {
-            $form[0].reset();
-            $('#success-modal').addClass('active');
-        })
-        .catch(error => {
-            console.error('Submission error:', error);
-            $form[0].reset();
-            $('#success-modal').addClass('active');
-        })
-        .finally(() => {
-            $submitBtn.prop('disabled', false).text(originalBtnText);
-        });
+            .then(response => {
+                $form[0].reset();
+                $('#success-modal').addClass('active');
+            })
+            .catch(error => {
+                console.error('Submission error:', error);
+                $form[0].reset();
+                $('#success-modal').addClass('active');
+            })
+            .finally(() => {
+                $submitBtn.prop('disabled', false).text(originalBtnText);
+            });
     });
 
-    $(document).on('click', '#close-modal-btn', function() {
+    $(document).on('click', '#close-modal-btn', function () {
         $('#success-modal').removeClass('active');
     });
 
-    $(document).on('click', '#success-modal', function(e) {
+    $(document).on('click', '#success-modal', function (e) {
         if ($(e.target).is('#success-modal')) {
             $('#success-modal').removeClass('active');
         }
     });
 
-    $(document).on('keydown', function(e) {
+    $(document).on('keydown', function (e) {
         if (e.key === 'Escape') {
             $('#success-modal').removeClass('active');
         }
